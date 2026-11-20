@@ -1,8 +1,12 @@
 # 1in8b Recorder
 
+公开仓库：[march-work/1in8b-recorder](https://github.com/march-work/1in8b-recorder)
+
 一个用于 [1in8b.life](https://1in8b.life/) 的 Tampermonkey 记录器，以及一份公开的比利时人生数据样本。
 
 > 本项目不是 1in8b.life 官方项目，与站点、Jin’s Earth 无隶属关系。游戏内容与数据的权利归原权利人所有。
+>
+> 安装方式见 [install/README.md](install/README.md)。
 
 ## 功能
 
