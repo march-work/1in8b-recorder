@@ -48,6 +48,12 @@
 4. Tampermonkey 确认安装/更新
 5. 打开或刷新 `https://1in8b.life/` 游戏页
 
+也可以直接从公开仓库安装：
+
+```text
+https://raw.githubusercontent.com/march-work/1in8b-recorder/main/src/1in8b-recorder.user.js
+```
+
 详细步骤见 [install/README.md](install/README.md)。
 
 ## 使用

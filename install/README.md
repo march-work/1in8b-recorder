@@ -22,6 +22,12 @@ http://127.0.0.1:8787/1in8b-recorder.user.js
 
 在 Chrome 打开上面的本地地址，Tampermonkey 会显示安装或更新。
 
+也可以直接从公开仓库安装：
+
+```text
+https://raw.githubusercontent.com/march-work/1in8b-recorder/main/src/1in8b-recorder.user.js
+```
+
 ## 4. 打开游戏
 
 打开：
