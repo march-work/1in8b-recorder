@@ -1,0 +1,76 @@
+{
+  "format": "1in8b-belgium-dataset",
+  "schema": 1,
+  "exportedAt": "2026-11-20T08:07:54.417Z",
+  "lifeId": "s1795160329798",
+  "name": "Daan Smit",
+  "born": "BEL",
+  "country": "BEL",
+  "recorderVersion": "1.5.0",
+  "source": "Chrome IndexedDB rec1in8b, copied and read via headless Chrome CDP",
+  "counts": {
+    "decisions": 63,
+    "focus": 10,
+    "states": 308,
+    "snapshots": 172,
+    "timelineEntries": 1,
+    "countries": 1
+  },
+  "ageRange": {
+    "min": 0,
+    "max": 82
+  },
+  "statesByReason": {
+    "save": 183,
+    "decision-before": 125
+  },
+  "snapshotsByType": {
+    "birth": 1,
+    "year": 82,
+    "decision": 62,
+    "sheet": 27
+  },
+  "files": {
+    "focus.csv": {
+      "bytes": 9627,
+      "sha256": "f6207757804373ac77a479cd6e4349f088a2b50fe02afc02782916df8b5f9d27"
+    },
+    "decisions.csv": {
+      "bytes": 52662,
+      "sha256": "d8cb6a156fd5ff7511c0759910124e74e6ce2e2531178a31461c03ebcccf5217"
+    },
+    "states.jsonl": {
+      "bytes": 17210619,
+      "sha256": "e94d756e26257a15a75b0d5be886dd893c189d9652ecd72f704850c4416ac8e9"
+    },
+    "timeline.csv": {
+      "bytes": 245,
+      "sha256": "dfd97e075ad81b3b6c48281c878db7d77e717798bfed8d197195354ea739d38d"
+    },
+    "states.csv": {
+      "bytes": 1298560,
+      "sha256": "3674117559108e849a2f374b62154963c97cfa294bb0ca1b5cd6291ff07fc7a8"
+    },
+    "snapshots.jsonl": {
+      "bytes": 2170569,
+      "sha256": "b37eb5324fd8b53625357f9bc043a1a9269dee16c742e001d2074ee5974d8551"
+    },
+    "life.json": {
+      "bytes": 141762,
+      "sha256": "54180d3480c5178c514e1fed3ca53ff61b216a299237d1e5033b7e9a5976e36c"
+    },
+    "countries.csv": {
+      "bytes": 1991,
+      "sha256": "8a4d20839fd9f1e14c5b369a2fb4e5870a8b4da3179b12091156e1337c0fd6b2"
+    },
+    "raw-indexeddb.json": {
+      "bytes": 29517680,
+      "sha256": "5bfffff3ed5263865cb6ecabedd1817331051bd20376e3b5cf6b46ad580c3a68"
+    }
+  },
+  "limitations": {
+    "timelineEntries": "Only entries present in the recorder timeline store are included.",
+    "otherLives": "Other lives and other countries are excluded.",
+    "profile": "Chrome profile, cookies, local storage and tokens are excluded."
+  }
+}

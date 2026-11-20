@@ -1,0 +1,4015 @@
+{
+  "format": "1in8b-life",
+  "schema": 1,
+  "exportedAt": "2026-11-20T08:07:54.417Z",
+  "source": "Chrome IndexedDB rec1in8b",
+  "lifeId": "s1795160329798",
+  "meta": {
+    "name": "Daan Smit",
+    "born": "BEL",
+    "sex": "M",
+    "era": "past",
+    "by": 2000,
+    "age": 82,
+    "phase": "life",
+    "startedAt": 1795160329798,
+    "lifeAt": null
+  },
+  "counts": {
+    "decisions": 63,
+    "focus": 10,
+    "states": 308,
+    "snapshots": 172,
+    "timelineEntries": 1,
+    "countries": 1
+  },
+  "life": {
+    "lifeId": "s1795160329798",
+    "source": "live",
+    "captureStatus": "live",
+    "startedAt": 1795160329798,
+    "endedAt": null,
+    "meta": {
+      "name": "Daan Smit",
+      "born": "BEL",
+      "sex": "M",
+      "era": "past",
+      "by": 2000,
+      "age": 82,
+      "phase": "life",
+      "startedAt": 1795160329798,
+      "lifeAt": null
+    },
+    "decisions": [
+      {
+        "id": "d1-mwoo484h",
+        "seq": 1,
+        "source": "live",
+        "type": "choice",
+        "lifeId": "s1795160329798",
+        "decisionId": "temper",
+        "beforeStateId": "st-mwoo484j-6",
+        "afterStateId": "st-mwoo4bew-8",
+        "at": "2026-11-20T07:39:01.025Z",
+        "age": 2,
+        "year": "2002年 · 过去的世界 · Daan Smit · 1年≈3秒",
+        "title": "重大抉择",
+        "body": "两岁，第一次见到的客人\n\nDaan现在已经走得很稳了。第一次见到的客人来到家里，这个孩子会先做什么呢？选了哪一边，孩子的气质就会往那边偏一些；这样的经验一点一滴累积，到五岁左右就会大致定型。\n\n1\n把客人的包包和鞋子仔细看了好一阵子\n2\n在客人面前跑来跑去\n3\n走到客人身边，把手上的东西递给对方\n4\n坚持要自己打开客人带来的包裹，一直努力到最后\n从现在起把抉择交给自动",
+        "question": "",
+        "options": [
+          {
+            "k": "cur",
+            "label": "把客人的包包和鞋子仔细看了好一阵子",
+            "sub": ""
+          },
+          {
+            "k": "act",
+            "label": "在客人面前跑来跑去",
+            "sub": ""
+          },
+          {
+            "k": "warm",
+            "label": "走到客人身边，把手上的东西递给对方",
+            "sub": ""
+          },
+          {
+            "k": "grit",
+            "label": "坚持要自己打开客人带来的包裹，一直努力到最后",
+            "sub": ""
+          }
+        ],
+        "optionsKnown": true,
+        "selectedK": "act",
+        "selectedLabel": "在客人面前跑来跑去",
+        "selectedSub": "",
+        "auto": false,
+        "autoEvidence": "trustedClick",
+        "selectionMode": "manual",
+        "optionsSource": "dom+hook",
+        "captureConfidence": "high",
+        "outcomeText": "抉择：在客人面前跑来跑去",
+        "decidedAt": "2026-11-20T07:39:05.263Z",
+        "decideMs": 4238,
+        "note": "",
+        "resolved": true,
+        "minimized": false,
+        "hadModal": true,
+        "preDone": null,
+        "preAuto": 0,
+        "possibleDuplicate": false,
+        "beforeStateAt": "2026-11-20T07:39:01.027Z",
+        "afterStateAt": "2026-11-20T07:39:05.288Z",
+        "hookId": "hc-mwoo4be9-1",
+        "saveSelectedK": null
+      },
+      {
+        "id": "d2-mwoo4lrc",
+        "seq": 2,
+        "source": "live",
+        "type": "choice",
+        "lifeId": "s1795160329798",
+        "decisionId": "reflect",
+        "beforeStateId": "st-mwoo4lre-12",
+        "afterStateId": "st-mwoo4mza-14",
+        "at": "2026-11-20T07:39:18.696Z",
+        "age": 5,
+        "year": "2005年 · 过去的世界 · Daan Smit · 1年≈3秒",
+        "title": "暂停片刻",
+        "body": "Daan，5岁\n\n在比利时，有0.7%的孩子等不到五岁生日。这个孩子等到了。在我们推测是你出生地的中国，则是3.7%。\n\n同一秒出生的人们——Lyudmila（俄罗斯）：童年 · 陈丹（中国）：童年 · Brenda（美国）：童年 · Geeta（印度）：童年\n\n五岁的Daan，现在最需要的是什么？\n\n1\n写下来，继续生活\n写下的文字会留在这一生的纪录里\n2\n放在心里，继续生活\n从现在起把抉择交给自动\n以后不再显示这个视窗",
+        "question": "五岁的Daan，现在最需要的是什么？",
+        "options": [
+          {
+            "k": "write",
+            "label": "写下来，继续生活",
+            "sub": ""
+          },
+          {
+            "k": "skip",
+            "label": "放在心里，继续生活",
+            "sub": ""
+          }
+        ],
+        "optionsKnown": true,
+        "selectedK": "skip",
+        "selectedLabel": "放在心里，继续生活",
+        "selectedSub": "",
+        "auto": false,
+        "autoEvidence": "trustedClick",
+        "selectionMode": "manual",
+        "optionsSource": "dom+hook",
+        "captureConfidence": "high",
+        "outcomeText": "",
+        "decidedAt": "2026-11-20T07:39:20.255Z",
+        "decideMs": 1559,
+        "note": "",
+        "resolved": true,
+        "minimized": false,
+        "hadModal": true,
+        "preDone": null,
+        "preAuto": 0,
+        "possibleDuplicate": false,
+        "beforeStateAt": "2026-11-20T07:39:18.698Z",
+        "afterStateAt": "2026-11-20T07:39:20.278Z",
+        "hookId": "hc-mwoo4myq-2",
+        "saveSelectedK": null
+      },
+      {
+        "id": "d3-mwoo54nf",
+        "seq": 3,
+        "source": "live",
+        "type": "choice",
+        "lifeId": "s1795160329798",
+        "decisionId": "hobby",
+        "beforeStateId": "st-mwoo54nh-18",
+        "afterStateId": "st-mwoo57jz-20",
+        "at": "2026-11-20T07:39:43.179Z",
+        "age": 7,
+        "year": "2007年 · 过去的世界 · Daan Smit · 1年≈6秒",
+        "title": "重大抉择",
+        "body": "找到喜欢的事\n\n真希望能有一件让你忘了时间、全心投入的事。\n\n1\n唱歌·演奏乐器\n幸福+ 人际关系+\n2\n种菜\n幸福+ 健康+\n3\n足球\n幸福+ 健康+ 人际关系+\n从现在起把抉择交给自动",
+        "question": "",
+        "options": [
+          {
+            "k": "music",
+            "label": "唱歌·演奏乐器",
+            "sub": ""
+          },
+          {
+            "k": "garden",
+            "label": "种菜",
+            "sub": ""
+          },
+          {
+            "k": "sp_football",
+            "label": "足球",
+            "sub": ""
+          },
+          {
+            "k": "dance",
+            "label": "跳舞",
+            "sub": "幸福+ 健康+ 人际关系+"
+          },
+          {
+            "k": "writing",
+            "label": "写诗和小说",
+            "sub": "幸福+ 知识+"
+          },
+          {
+            "k": "none",
+            "label": "现在的兴趣就够了",
+            "sub": ""
+          },
+          {
+            "k": "gym",
+            "label": "健身",
+            "sub": "幸福+ 健康+ 要花钱"
+          },
+          {
+            "k": "hiking",
+            "label": "爬山·散步",
+            "sub": "幸福+ 健康+"
+          },
+          {
+            "k": "camping",
+            "label": "露营",
+            "sub": "幸福+ 健康+ 人际关系+ 要花钱"
+          }
+        ],
+        "optionsKnown": true,
+        "selectedK": "music",
+        "selectedLabel": "唱歌·演奏乐器",
+        "selectedSub": "",
+        "auto": false,
+        "autoEvidence": "trustedClick",
+        "selectionMode": "manual",
+        "optionsSource": "dom+hook",
+        "captureConfidence": "high",
+        "outcomeText": "抉择：唱歌·演奏乐器",
+        "decidedAt": "2026-11-20T07:39:46.911Z",
+        "decideMs": 3732,
+        "note": "",
+        "resolved": true,
+        "minimized": false,
+        "hadModal": true,
+        "preDone": null,
+        "preAuto": 0,
+        "possibleDuplicate": false,
+        "beforeStateAt": "2026-11-20T07:39:43.181Z",
+        "afterStateAt": "2026-11-20T07:39:46.943Z",
+        "hookId": "hc-mwoo57j6-3",
+        "saveSelectedK": null
+      },
+      {
+        "id": "d4-mwoo5ge9",
+        "seq": 4,
+        "source": "live",
+        "type": "choice",
+        "lifeId": "s1795160329798",
+        "decisionId": "sm_wallet",
+        "beforeStateId": "st-mwoo5ged-23",
+        "afterStateId": "st-mwoo5hsh-25",
+        "at": "2026-11-20T07:39:58.401Z",
+        "age": 9,
+        "year": "2009年 · 过去的世界 · Daan Smit · 1年≈6秒",
+        "title": "小小的选择",
+        "body": "在路上捡到的钱包\n\n你在路上捡到一个钱包。里面有不少钱。\n\n1\n告诉大人，帮忙找到失主\n2\n偷偷留下来\n从现在起把抉择交给自动",
+        "question": "",
+        "options": [
+          {
+            "k": "return",
+            "label": "告诉大人，帮忙找到失主",
+            "sub": ""
+          },
+          {
+            "k": "keep",
+            "label": "偷偷留下来",
+            "sub": ""
+          }
+        ],
+        "optionsKnown": true,
+        "selectedK": "return",
+        "selectedLabel": "告诉大人，帮忙找到失主",
+        "selectedSub": "",
+        "auto": false,
+        "autoEvidence": "trustedClick",
+        "selectionMode": "manual",
+        "optionsSource": "dom+hook",
+        "captureConfidence": "high",
+        "outcomeText": "抉择：告诉大人，帮忙找到失主",
+        "decidedAt": "2026-11-20T07:40:00.191Z",
+        "decideMs": 1791,
+        "note": "",
+        "resolved": true,
+        "minimized": false,
+        "hadModal": true,
+        "preDone": null,
+        "preAuto": 0,
+        "possibleDuplicate": false,
+        "beforeStateAt": "2026-11-20T07:39:58.405Z",
+        "afterStateAt": "2026-11-20T07:40:00.209Z",
+        "hookId": "hc-mwoo5hs3-4",
+        "saveSelectedK": null
+      },
+      {
+        "id": "d5-mwoo5udk",
+        "seq": 5,
+        "source": "live",
+        "type": "choice",
+        "lifeId": "s1795160329798",
+        "decisionId": "petq",
+        "beforeStateId": "st-mwoo5udl-28",
+        "afterStateId": "st-mwoo5vpq-30",
+        "at": "2026-11-20T07:40:16.520Z",
+        "age": 11,
+        "year": "2011年 · 过去的世界 · Daan Smit · 1年≈12秒",
+        "title": "重大抉择",
+        "body": "我想养小狗\n\n自从看到朋友牵着小狗散步，你就一直缠着父母。\n\n母亲44岁 · 父亲44岁\n\n在比利时，估计约有45%的家庭养狗或猫（根据APPA、FEDIAF、KB、GfK调查推算的大略数值）\n取名字\n1\n一再央求\n答不答应，要看家里的经济状况\n2\n忍下来\n从现在起把抉择交给自动",
+        "question": "",
+        "options": [
+          {
+            "k": "beg",
+            "label": "一再央求",
+            "sub": ""
+          },
+          {
+            "k": "no",
+            "label": "忍下来",
+            "sub": ""
+          },
+          {
+            "k": "dog",
+            "label": "养一只狗",
+            "sub": "一年约5,071元 · 相伴10至15年"
+          },
+          {
+            "k": "cat",
+            "label": "养一只猫",
+            "sub": "一年约3,381元 · 相伴12至18年"
+          },
+          {
+            "k": "pk_f",
+            "label": "在家里摆个鱼缸养鱼",
+            "sub": "每年约1,352元 · 可相伴4~9年"
+          },
+          {
+            "k": "pk_h",
+            "label": "养一只仓鼠",
+            "sub": "每年约1,014元 · 可相伴2~3年"
+          },
+          {
+            "k": "pk_b",
+            "label": "养一只鹦鹉",
+            "sub": "每年约1,352元 · 可相伴6~12年"
+          },
+          {
+            "k": "pk_r",
+            "label": "养一只兔子",
+            "sub": "每年约1,690元 · 可相伴8~12年"
+          },
+          {
+            "k": "never",
+            "label": "不养宠物",
+            "sub": "以后不会再问"
+          }
+        ],
+        "optionsKnown": true,
+        "selectedK": "beg",
+        "selectedLabel": "一再央求",
+        "selectedSub": "",
+        "auto": false,
+        "autoEvidence": "trustedClick",
+        "selectionMode": "manual",
+        "optionsSource": "dom+hook",
+        "captureConfidence": "high",
+        "outcomeText": "抉择：一再央求",
+        "decidedAt": "2026-11-20T07:40:18.207Z",
+        "decideMs": 1687,
+        "note": "",
+        "resolved": true,
+        "minimized": false,
+        "hadModal": true,
+        "preDone": null,
+        "preAuto": 0,
+        "possibleDuplicate": false,
+        "beforeStateAt": "2026-11-20T07:40:16.521Z",
+        "afterStateAt": "2026-11-20T07:40:18.254Z",
+        "hookId": "hc-mwoo5voi-5",
+        "saveSelectedK": null
+      },
+      {
+        "id": "d6-mwoo6mn2",
+        "seq": 6,
+        "source": "live",
+        "type": "choice",
+        "lifeId": "s1795160329798",
+        "decisionId": "school3",
+        "beforeStateId": "st-mwoo6mn3-34",
+        "afterStateId": "st-mwoo6twk-36",
+        "at": "2026-11-20T07:40:53.150Z",
+        "age": 14,
+        "year": "2014年 · 过去的世界 · Daan Smit · 1年≈6秒",
+        "title": "重大抉择",
+        "body": "选择出路\n\n你读完了国中。要上哪一所高中呢？\n\n比利时的高中完成率约78%（推估）\n1\n普通高中\n有利于升大学\n2\n报考艺术高中音乐科\n术科考试 · 录取机会偏低 · 没考上就读一般高中\n3\n职业高中机械·电机科\n有利于找这个领域的工作\n4\n职业高中餐饮·美容科\n有利于找这个领域的工作\n从现在起把抉择交给自动",
+        "question": "",
+        "options": [
+          {
+            "k": "go",
+            "label": "普通高中",
+            "sub": ""
+          },
+          {
+            "k": "arts",
+            "label": "报考艺术高中音乐科",
+            "sub": ""
+          },
+          {
+            "k": "voc_tech",
+            "label": "职业高中机械·电机科",
+            "sub": ""
+          },
+          {
+            "k": "voc_food",
+            "label": "职业高中餐饮·美容科",
+            "sub": ""
+          }
+        ],
+        "optionsKnown": true,
+        "selectedK": "arts",
+        "selectedLabel": "报考艺术高中音乐科",
+        "selectedSub": "",
+        "auto": false,
+        "autoEvidence": "trustedClick",
+        "selectionMode": "manual",
+        "optionsSource": "dom+hook",
+        "captureConfidence": "high",
+        "outcomeText": "抉择：报考艺术高中音乐科",
+        "decidedAt": "2026-11-20T07:41:02.535Z",
+        "decideMs": 9385,
+        "note": "",
+        "resolved": true,
+        "minimized": false,
+        "hadModal": true,
+        "preDone": null,
+        "preAuto": 0,
+        "possibleDuplicate": false,
+        "beforeStateAt": "2026-11-20T07:40:53.151Z",
+        "afterStateAt": "2026-11-20T07:41:02.564Z",
+        "hookId": "hc-mwoo6tvv-6",
+        "saveSelectedK": null
+      },
+      {
+        "id": "d7-mwoo6ycq",
+        "seq": 7,
+        "source": "live",
+        "type": "choice",
+        "lifeId": "s1795160329798",
+        "decisionId": "reflect",
+        "beforeStateId": "st-mwoo6ycr-38",
+        "afterStateId": "st-mwoo6zli-40",
+        "at": "2026-11-20T07:41:08.330Z",
+        "age": 15,
+        "year": "2015年 · 过去的世界 · Daan Smit · 1年≈6秒",
+        "title": "暂停片刻",
+        "body": "Daan，15岁\n\n这个孩子现在在上学。比利时的预期受教育年数为18年，中国则是14.7年。\n\n同一秒出生的人们——Lyudmila（俄罗斯）：上学 · 陈丹（中国）：上学 · Brenda（美国）：上学 · Geeta（印度）：照顾家人 · 已婚 · 1个孩子\n\nDaan能梦想的未来，和十五岁的你所梦想的未来，有多大的不同？\n\n1\n写下来，继续生活\n写下的文字会留在这一生的纪录里\n2\n放在心里，继续生活\n从现在起把抉择交给自动\n以后不再显示这个视窗",
+        "question": "Daan能梦想的未来，和十五岁的你所梦想的未来，有多大的不同？",
+        "options": [
+          {
+            "k": "write",
+            "label": "写下来，继续生活",
+            "sub": ""
+          },
+          {
+            "k": "skip",
+            "label": "放在心里，继续生活",
+            "sub": ""
+          }
+        ],
+        "optionsKnown": true,
+        "selectedK": "skip",
+        "selectedLabel": "放在心里，继续生活",
+        "selectedSub": "",
+        "auto": false,
+        "autoEvidence": "trustedClick",
+        "selectionMode": "manual",
+        "optionsSource": "dom+hook",
+        "captureConfidence": "high",
+        "outcomeText": "",
+        "decidedAt": "2026-11-20T07:41:09.920Z",
+        "decideMs": 1590,
+        "note": "",
+        "resolved": true,
+        "minimized": false,
+        "hadModal": true,
+        "preDone": null,
+        "preAuto": 0,
+        "possibleDuplicate": false,
+        "beforeStateAt": "2026-11-20T07:41:08.331Z",
+        "afterStateAt": "2026-11-20T07:41:09.942Z",
+        "hookId": "hc-mwoo6zl0-7",
+        "saveSelectedK": null
+      },
+      {
+        "id": "d8-mwoo70yn",
+        "seq": 8,
+        "source": "live",
+        "type": "choice",
+        "lifeId": "s1795160329798",
+        "decisionId": "hobby",
+        "beforeStateId": "st-mwoo70yp-41",
+        "afterStateId": "st-mwoo758g-43",
+        "at": "2026-11-20T07:41:11.711Z",
+        "age": 15,
+        "year": "2015年 · 过去的世界 · Daan Smit · 1年≈6秒",
+        "title": "重大抉择",
+        "body": "要开始新的兴趣吗？\n\n目前的兴趣：唱歌·演奏乐器\n\n1\n跳舞\n幸福+ 健康+ 人际关系+\n2\n写诗和小说\n幸福+ 知识+\n3\n足球\n幸福+ 健康+ 人际关系+\n4\n现在的兴趣就够了\n从现在起把抉择交给自动",
+        "question": "",
+        "options": [
+          {
+            "k": "dance",
+            "label": "跳舞",
+            "sub": ""
+          },
+          {
+            "k": "writing",
+            "label": "写诗和小说",
+            "sub": ""
+          },
+          {
+            "k": "sp_football",
+            "label": "足球",
+            "sub": ""
+          },
+          {
+            "k": "none",
+            "label": "现在的兴趣就够了",
+            "sub": ""
+          }
+        ],
+        "optionsKnown": true,
+        "selectedK": "sp_football",
+        "selectedLabel": "足球",
+        "selectedSub": "",
+        "auto": false,
+        "autoEvidence": "trustedClick",
+        "selectionMode": "manual",
+        "optionsSource": "dom",
+        "captureConfidence": "high",
+        "outcomeText": "",
+        "decidedAt": "2026-11-20T07:41:17.223Z",
+        "decideMs": 5511,
+        "note": "",
+        "resolved": true,
+        "minimized": false,
+        "hadModal": true,
+        "preDone": null,
+        "preAuto": 0,
+        "possibleDuplicate": false,
+        "beforeStateAt": "2026-11-20T07:41:11.713Z",
+        "afterStateAt": "2026-11-20T07:41:17.248Z",
+        "saveSelectedK": null
+      },
+      {
+        "id": "d9-mwoo7zx8",
+        "seq": 9,
+        "source": "live",
+        "type": "choice",
+        "lifeId": "s1795160329798",
+        "decisionId": "college",
+        "beforeStateId": "st-mwoo7zxa-50",
+        "afterStateId": "st-mwoo8465-52",
+        "at": "2026-11-20T07:41:57.020Z",
+        "age": 18,
+        "year": "2018年 · 过去的世界 · Daan Smit · 1年≈12秒",
+        "title": "重大抉择",
+        "body": "毕业后的十字路口\n\n你读完了高中。接下来呢？\n\n这个国家同一世代中，完成大学学业的比例估计约57%。「知识」代表你在同龄人中的位置：越高越容易录取，但名额有限，无法保证\n1\n挑战大学入学考试\n录取机会：偏高 · 知识84 · 视家境与名额而定\n2\n直接就业\n早点赚钱\n3\n报考军官学校\n录取机会：偏低 · 免学费 · 毕业后担任军官服役\n–\n出国留学\n家里的经济负担不起 · 若有约12.4万元的存款就能选\n从现在起把抉择交给自动",
+        "question": "",
+        "options": [
+          {
+            "k": "uni",
+            "label": "挑战大学入学考试",
+            "sub": ""
+          },
+          {
+            "k": "job",
+            "label": "直接就业",
+            "sub": ""
+          },
+          {
+            "k": "acad",
+            "label": "报考军官学校",
+            "sub": ""
+          }
+        ],
+        "optionsKnown": true,
+        "selectedK": "uni",
+        "selectedLabel": "挑战大学入学考试",
+        "selectedSub": "",
+        "auto": false,
+        "autoEvidence": "trustedClick",
+        "selectionMode": "manual",
+        "optionsSource": "dom+hook",
+        "captureConfidence": "high",
+        "outcomeText": "抉择：挑战大学入学考试",
+        "decidedAt": "2026-11-20T07:42:02.505Z",
+        "decideMs": 5485,
+        "note": "",
+        "resolved": true,
+        "minimized": false,
+        "hadModal": true,
+        "preDone": null,
+        "preAuto": 0,
+        "possibleDuplicate": false,
+        "beforeStateAt": "2026-11-20T07:41:57.022Z",
+        "afterStateAt": "2026-11-20T07:42:02.525Z",
+        "hookId": "hc-mwoo845o-9",
+        "saveSelectedK": null
+      },
+      {
+        "id": "d10-mwoo84jc",
+        "seq": 10,
+        "source": "live",
+        "type": "choice",
+        "lifeId": "s1795160329798",
+        "decisionId": "major",
+        "beforeStateId": "st-mwoo84je-53",
+        "afterStateId": "st-mwoo88v1-55",
+        "at": "2026-11-20T07:42:03.000Z",
+        "age": 18,
+        "year": "2018年 · 过去的世界 · Daan Smit · 1年≈12秒",
+        "title": "重大抉择",
+        "body": "要读什么科系呢？\n\n要进大学了，该决定就读的科系。科系会大大影响你的第一份工作。可惜差了一点，没达到医学系的录取门槛。也有和你多年来的兴趣（唱歌·演奏乐器）相关的科系。音乐系要透过术科考试选才。\n\n1\n商管·经济\n上班族·金融·创业\n2\n艺术·设计\n艺术家·设计师\n3\n人文学\n教师·办公室职员·作家\n4\n教育\n教师\n5\n音乐\n演奏家·声乐家·作曲家·音乐老师 · 需术科考试，录取机会：偏高\n从现在起把抉择交给自动",
+        "question": "",
+        "options": [
+          {
+            "k": "biz",
+            "label": "商管·经济",
+            "sub": ""
+          },
+          {
+            "k": "art",
+            "label": "艺术·设计",
+            "sub": ""
+          },
+          {
+            "k": "hum",
+            "label": "人文学",
+            "sub": ""
+          },
+          {
+            "k": "edu",
+            "label": "教育",
+            "sub": ""
+          },
+          {
+            "k": "mus",
+            "label": "音乐",
+            "sub": ""
+          }
+        ],
+        "optionsKnown": true,
+        "selectedK": "mus",
+        "selectedLabel": "音乐",
+        "selectedSub": "",
+        "auto": false,
+        "autoEvidence": "trustedClick",
+        "selectionMode": "manual",
+        "optionsSource": "dom+hook",
+        "captureConfidence": "high",
+        "outcomeText": "抉择：音乐",
+        "decidedAt": "2026-11-20T07:42:08.577Z",
+        "decideMs": 5577,
+        "note": "",
+        "resolved": true,
+        "minimized": false,
+        "hadModal": true,
+        "preDone": null,
+        "preAuto": 0,
+        "possibleDuplicate": false,
+        "beforeStateAt": "2026-11-20T07:42:03.002Z",
+        "afterStateAt": "2026-11-20T07:42:08.605Z",
+        "hookId": "hc-mwoo88ue-10",
+        "saveSelectedK": null
+      },
+      {
+        "id": "d11-mwoo8qs9",
+        "seq": 11,
+        "source": "live",
+        "type": "choice",
+        "lifeId": "s1795160329798",
+        "decisionId": "petsick",
+        "beforeStateId": "st-mwoo8qsc-58",
+        "afterStateId": "st-mwoo8t7p-60",
+        "at": "2026-11-20T07:42:31.833Z",
+        "age": 20,
+        "year": "2020年 · 过去的世界 · Daan Smit · 1年≈12秒",
+        "title": "重大抉择",
+        "body": "Coco生病了\n\n9岁的Coco已经好几天不吃东西了。兽医说，治疗的话也许会好。\n\n1\n带去治疗\n约7,529元 · 可能会好，也可能不会\n2\n陪在身边，让牠安详离开\n从现在起把抉择交给自动",
+        "question": "",
+        "options": [
+          {
+            "k": "treat",
+            "label": "带去治疗",
+            "sub": ""
+          },
+          {
+            "k": "comfort",
+            "label": "陪在身边，让牠安详离开",
+            "sub": ""
+          }
+        ],
+        "optionsKnown": true,
+        "selectedK": "comfort",
+        "selectedLabel": "陪在身边，让牠安详离开",
+        "selectedSub": "",
+        "auto": false,
+        "autoEvidence": "trustedClick",
+        "selectionMode": "manual",
+        "optionsSource": "dom+hook",
+        "captureConfidence": "high",
+        "outcomeText": "抉择：陪在身边，让牠安详离开",
+        "decidedAt": "2026-11-20T07:42:34.953Z",
+        "decideMs": 3119,
+        "note": "",
+        "resolved": true,
+        "minimized": false,
+        "hadModal": true,
+        "preDone": null,
+        "preAuto": 0,
+        "possibleDuplicate": false,
+        "beforeStateAt": "2026-11-20T07:42:31.836Z",
+        "afterStateAt": "2026-11-20T07:42:34.981Z",
+        "hookId": "hc-mwoo8t6z-11",
+        "saveSelectedK": null
+      },
+      {
+        "id": "d12-mwoo933i",
+        "seq": 12,
+        "source": "live",
+        "type": "choice",
+        "lifeId": "s1795160329798",
+        "decisionId": "afterUni",
+        "beforeStateId": "st-mwoo933k-62",
+        "afterStateId": "st-mwoo97bd-64",
+        "at": "2026-11-20T07:42:47.790Z",
+        "age": 21,
+        "year": "2021年 · 过去的世界 · Daan Smit · 1年≈12秒",
+        "title": "重大抉择",
+        "body": "毕业之后\n\n你取得了学士学位。要继续深造，还是开始工作？\n\n全世界25岁以上的人口中，拥有学士以上学位的约占15～20%（UNESCO·Barro-Lee估计）\n1\n就业\n凭学士学位找工作\n2\n念研究所\n再读2年，可从事专业工作\n–\n出国读研究所\n家里的经济负担不起 · 若有约16.3万元的存款就能选\n从现在起把抉择交给自动",
+        "question": "",
+        "options": [
+          {
+            "k": "job",
+            "label": "就业",
+            "sub": ""
+          },
+          {
+            "k": "grad",
+            "label": "念研究所",
+            "sub": ""
+          }
+        ],
+        "optionsKnown": true,
+        "selectedK": "grad",
+        "selectedLabel": "念研究所",
+        "selectedSub": "",
+        "auto": false,
+        "autoEvidence": "trustedClick",
+        "selectionMode": "manual",
+        "optionsSource": "dom+hook",
+        "captureConfidence": "high",
+        "outcomeText": "抉择：念研究所",
+        "decidedAt": "2026-11-20T07:42:53.217Z",
+        "decideMs": 5427,
+        "note": "",
+        "resolved": true,
+        "minimized": false,
+        "hadModal": true,
+        "preDone": null,
+        "preAuto": 0,
+        "possibleDuplicate": false,
+        "beforeStateAt": "2026-11-20T07:42:47.792Z",
+        "afterStateAt": "2026-11-20T07:42:53.257Z",
+        "hookId": "hc-mwoo97ab-12",
+        "saveSelectedK": null
+      },
+      {
+        "id": "d13-mwoo98dx",
+        "seq": 13,
+        "source": "live",
+        "type": "choice",
+        "lifeId": "s1795160329798",
+        "decisionId": "job",
+        "beforeStateId": "st-mwoo98dz-65",
+        "afterStateId": "st-mwoo9c2n-67",
+        "at": "2026-11-20T07:42:54.645Z",
+        "age": 21,
+        "year": "2021年 · 过去的世界 · Daan Smit · 1年≈12秒",
+        "title": "重大抉择",
+        "body": "选择你的第一份工作\n\n学历：大学。以下是在比利时的城市能找到的工作。\n\n比利时的劳工估计约有16%属于非正式就业（依ILO标准推估） · 农业从业者1%\n1\n电视·影音制作人\n年收入US$63,705 PPP · 以中国大陆物价换算每月18,580元 · 正职（退休金·保险）\n2\n教师\n年收入US$52,334 PPP · 以中国大陆物价换算每月15,264元 · 正职（退休金·保险）\n3\n销售员\n年收入US$41,190 PPP · 以中国大陆物价换算每月12,014元 · 正职（退休金·保险）\n4\n等待更好的工作\n再找一年工作\n从现在起把抉择交给自动",
+        "question": "",
+        "options": [
+          {
+            "k": "o0",
+            "label": "电视·影音制作人",
+            "sub": ""
+          },
+          {
+            "k": "o1",
+            "label": "教师",
+            "sub": ""
+          },
+          {
+            "k": "o2",
+            "label": "销售员",
+            "sub": ""
+          },
+          {
+            "k": "wait",
+            "label": "等待更好的工作",
+            "sub": ""
+          }
+        ],
+        "optionsKnown": true,
+        "selectedK": "o0",
+        "selectedLabel": "电视·影音制作人",
+        "selectedSub": "",
+        "auto": false,
+        "autoEvidence": "trustedClick",
+        "selectionMode": "manual",
+        "optionsSource": "dom+hook",
+        "captureConfidence": "high",
+        "outcomeText": "抉择：电视·影音制作人",
+        "decidedAt": "2026-11-20T07:42:59.385Z",
+        "decideMs": 4740,
+        "note": "",
+        "resolved": true,
+        "minimized": false,
+        "hadModal": true,
+        "preDone": null,
+        "preAuto": 0,
+        "possibleDuplicate": false,
+        "beforeStateAt": "2026-11-20T07:42:54.647Z",
+        "afterStateAt": "2026-11-20T07:42:59.423Z",
+        "hookId": "hc-mwoo9c1n-13",
+        "saveSelectedK": null
+      },
+      {
+        "id": "d14-mwoo9dpj",
+        "seq": 14,
+        "source": "live",
+        "type": "choice",
+        "lifeId": "s1795160329798",
+        "decisionId": "mustry",
+        "beforeStateId": "st-mwoo9dpl-68",
+        "afterStateId": "st-mwoo9kg4-70",
+        "at": "2026-11-20T07:43:01.543Z",
+        "age": 21,
+        "year": "2021年 · 过去的世界 · Daan Smit · 1年≈12秒",
+        "title": "重大抉择",
+        "body": "要不要靠音乐维生？\n\n你从小唱歌、演奏，渐渐有了名气，有人邀你一起登台、一起写歌。这是把音乐当作工作的机会。\n\n1\n把音乐当作工作\n收入不稳定 · 顺利的话可能闯出名声\n2\n把音乐留作兴趣\n从现在起把抉择交给自动",
+        "question": "",
+        "options": [
+          {
+            "k": "try",
+            "label": "把音乐当作工作",
+            "sub": ""
+          },
+          {
+            "k": "no",
+            "label": "把音乐留作兴趣",
+            "sub": ""
+          }
+        ],
+        "optionsKnown": true,
+        "selectedK": "try",
+        "selectedLabel": "把音乐当作工作",
+        "selectedSub": "",
+        "auto": false,
+        "autoEvidence": "trustedClick",
+        "selectionMode": "manual",
+        "optionsSource": "dom+hook",
+        "captureConfidence": "high",
+        "outcomeText": "抉择：把音乐当作工作",
+        "decidedAt": "2026-11-20T07:43:10.249Z",
+        "decideMs": 8706,
+        "note": "",
+        "resolved": true,
+        "minimized": false,
+        "hadModal": true,
+        "preDone": null,
+        "preAuto": 0,
+        "possibleDuplicate": false,
+        "beforeStateAt": "2026-11-20T07:43:01.545Z",
+        "afterStateAt": "2026-11-20T07:43:10.276Z",
+        "hookId": "hc-mwoo9kfg-14",
+        "saveSelectedK": null
+      },
+      {
+        "id": "d15-mwoo9tfa",
+        "seq": 15,
+        "source": "live",
+        "type": "choice",
+        "lifeId": "s1795160329798",
+        "decisionId": "applpar",
+        "beforeStateId": "st-mwoo9tfc-72",
+        "afterStateId": "st-mwoo9w27-74",
+        "at": "2026-11-20T07:43:21.910Z",
+        "age": 22,
+        "year": "2022年 · 过去的世界 · Daan Smit · 1年≈12秒",
+        "title": "重大抉择",
+        "body": "母亲家的冰箱坏了\n\n你住在母亲家，家里的冰箱得换新的了。新的大约要5,202元。\n\n母亲55岁\n\n1\n全部由我出\n约5,202元\n2\n出一半\n约2,601元\n3\n交给母亲处理\n不用花钱\n从现在起把抉择交给自动",
+        "question": "",
+        "options": [
+          {
+            "k": "all",
+            "label": "全部由我出",
+            "sub": ""
+          },
+          {
+            "k": "half",
+            "label": "出一半",
+            "sub": ""
+          },
+          {
+            "k": "par",
+            "label": "交给母亲处理",
+            "sub": ""
+          }
+        ],
+        "optionsKnown": true,
+        "selectedK": "par",
+        "selectedLabel": "交给母亲处理",
+        "selectedSub": "",
+        "auto": false,
+        "autoEvidence": "trustedClick",
+        "selectionMode": "manual",
+        "optionsSource": "dom+hook",
+        "captureConfidence": "high",
+        "outcomeText": "抉择：交给母亲处理",
+        "decidedAt": "2026-11-20T07:43:25.306Z",
+        "decideMs": 3396,
+        "note": "",
+        "resolved": true,
+        "minimized": false,
+        "hadModal": true,
+        "preDone": null,
+        "preAuto": 0,
+        "possibleDuplicate": false,
+        "beforeStateAt": "2026-11-20T07:43:21.912Z",
+        "afterStateAt": "2026-11-20T07:43:25.327Z",
+        "hookId": "hc-mwoo9w1p-15",
+        "saveSelectedK": "par"
+      },
+      {
+        "id": "d16-mwooa3rc",
+        "seq": 16,
+        "source": "live",
+        "type": "choice",
+        "lifeId": "s1795160329798",
+        "decisionId": "fr_move",
+        "beforeStateId": "st-mwooa3re-76",
+        "afterStateId": "st-mwooa6sh-78",
+        "at": "2026-11-20T07:43:35.304Z",
+        "age": 23,
+        "year": "2023年 · 过去的世界 · Daan Smit · 1年≈12秒",
+        "title": "重大抉择",
+        "body": "要分期付款买汽车吗？\n\n价格约64,729元（以中国大陆物价计）。你现在的存款是13,477元，没办法一次付清。如果分4年付款，这段期间都会背着债务，还要付利息。现在每天通勤要1小时，开车的话大约40分钟。\n\n在美国，超过80%的新车是靠贷款或租赁取得的（Experian，2025年第三季）\n1\n分期付款买\n4年分期 · 负债约51,252元 · 要付利息 · 幸福 +8\n2\n存够钱再买\n不必负债\n从现在起把抉择交给自动",
+        "question": "",
+        "options": [
+          {
+            "k": "loan",
+            "label": "分期付款买",
+            "sub": ""
+          },
+          {
+            "k": "no",
+            "label": "存够钱再买",
+            "sub": ""
+          }
+        ],
+        "optionsKnown": true,
+        "selectedK": "no",
+        "selectedLabel": "存够钱再买",
+        "selectedSub": "",
+        "auto": false,
+        "autoEvidence": "trustedClick",
+        "selectionMode": "manual",
+        "optionsSource": "dom+hook",
+        "captureConfidence": "high",
+        "outcomeText": "",
+        "decidedAt": "2026-11-20T07:43:39.201Z",
+        "decideMs": 3897,
+        "note": "",
+        "resolved": true,
+        "minimized": false,
+        "hadModal": true,
+        "preDone": null,
+        "preAuto": 0,
+        "possibleDuplicate": false,
+        "beforeStateAt": "2026-11-20T07:43:35.306Z",
+        "afterStateAt": "2026-11-20T07:43:39.233Z",
+        "hookId": "hc-mwooa6rp-16",
+        "saveSelectedK": null
+      },
+      {
+        "id": "sd-buy-mwooa7d4-0",
+        "seq": null,
+        "source": "save-diff",
+        "type": "choice",
+        "decisionId": "buy",
+        "at": null,
+        "age": null,
+        "year": null,
+        "title": null,
+        "body": null,
+        "question": null,
+        "options": null,
+        "optionsKnown": false,
+        "selectedK": null,
+        "selectedLabel": null,
+        "selectedSub": null,
+        "auto": null,
+        "autoEvidence": "backfill",
+        "selectionMode": "backfill",
+        "optionsSource": "none",
+        "captureConfidence": "low",
+        "outcomeText": "",
+        "decideMs": null,
+        "note": "",
+        "resolved": true,
+        "count": 1,
+        "possibleDuplicate": false
+      },
+      {
+        "id": "d18-mwoobw37",
+        "seq": 18,
+        "source": "live",
+        "type": "choice",
+        "lifeId": "s1795160329798",
+        "decisionId": "drink",
+        "beforeStateId": "st-mwoobw39-83",
+        "afterStateId": "st-mwoobyfi-85",
+        "at": "2026-11-20T07:44:58.675Z",
+        "age": 24,
+        "year": "2024年 · 过去的世界 · Daan Smit · 1年≈12秒",
+        "title": "重大抉择",
+        "body": "酒越喝越多\n\n要忘掉难过的事，好像没有什么比得上酒。睡前的一杯，不知不觉变成了三、四杯。\n\n全世界约7%的成人有酒精使用障碍，3.7%有酒精依赖（WHO 2024）\n1\n少喝一点，找别的方法纾解\n散步·与人往来·求助\n2\n靠喝酒撑着\n眼前比较轻松 · 可能形成依赖\n从现在起把抉择交给自动",
+        "question": "",
+        "options": [
+          {
+            "k": "stop",
+            "label": "少喝一点，找别的方法纾解",
+            "sub": ""
+          },
+          {
+            "k": "drink",
+            "label": "靠喝酒撑着",
+            "sub": ""
+          }
+        ],
+        "optionsKnown": true,
+        "selectedK": "stop",
+        "selectedLabel": "少喝一点，找别的方法纾解",
+        "selectedSub": "",
+        "auto": false,
+        "autoEvidence": "trustedClick",
+        "selectionMode": "manual",
+        "optionsSource": "dom+hook",
+        "captureConfidence": "high",
+        "outcomeText": "抉择：少喝一点，找别的方法纾解",
+        "decidedAt": "2026-11-20T07:45:01.682Z",
+        "decideMs": 3007,
+        "note": "",
+        "resolved": true,
+        "minimized": false,
+        "hadModal": true,
+        "preDone": null,
+        "preAuto": 0,
+        "possibleDuplicate": false,
+        "beforeStateAt": "2026-11-20T07:44:58.677Z",
+        "afterStateAt": "2026-11-20T07:45:01.710Z",
+        "hookId": "hc-mwoobyet-17",
+        "saveSelectedK": "stop"
+      },
+      {
+        "id": "d19-mwooc82k",
+        "seq": 19,
+        "source": "live",
+        "type": "choice",
+        "lifeId": "s1795160329798",
+        "decisionId": "partner",
+        "beforeStateId": "st-mwooc82l-87",
+        "afterStateId": "st-mwoocf7m-89",
+        "at": "2026-11-20T07:45:14.204Z",
+        "age": 25,
+        "year": "2025年 · 过去的世界 · Daan Smit · 1年≈12秒",
+        "title": "重大抉择",
+        "body": "爱情来了\n\nMees Peters，在聚会上认识的29岁男性，个性能干。工作：汽车维修技师。\n\n查看更多\n▾\n在比利时，自2003年起，同性的两人也可以结婚\n1\n交往看看\n慢慢认识彼此 · 结婚以后再说\n2\n没有心动\n从现在起把抉择交给自动",
+        "question": "",
+        "options": [
+          {
+            "k": "date",
+            "label": "交往看看",
+            "sub": ""
+          },
+          {
+            "k": "no",
+            "label": "没有心动",
+            "sub": ""
+          }
+        ],
+        "optionsKnown": true,
+        "selectedK": "date",
+        "selectedLabel": "交往看看",
+        "selectedSub": "",
+        "auto": false,
+        "autoEvidence": "trustedClick",
+        "selectionMode": "manual",
+        "optionsSource": "dom+hook",
+        "captureConfidence": "high",
+        "outcomeText": "抉择：交往看看",
+        "decidedAt": "2026-11-20T07:45:23.419Z",
+        "decideMs": 9215,
+        "note": "",
+        "resolved": true,
+        "minimized": false,
+        "hadModal": true,
+        "preDone": null,
+        "preAuto": 0,
+        "possibleDuplicate": false,
+        "beforeStateAt": "2026-11-20T07:45:14.205Z",
+        "afterStateAt": "2026-11-20T07:45:23.458Z",
+        "hookId": "hc-mwoocf6m-18",
+        "saveSelectedK": null
+      },
+      {
+        "id": "d20-mwooco87",
+        "seq": 20,
+        "source": "live",
+        "type": "choice",
+        "lifeId": "s1795160329798",
+        "decisionId": "wedtalk",
+        "beforeStateId": "st-mwooco89-91",
+        "afterStateId": "st-mwoocznw-93",
+        "at": "2026-11-20T07:45:35.143Z",
+        "age": 26,
+        "year": "2026年 · 推估 · Daan Smit · 1年≈12秒",
+        "title": "重大抉择",
+        "body": "谈起结婚\n\n你和Mees交往已经1年了。Mees提起了结婚的事。Mees存了大约66,232元。\n\n查看更多\n▾\n在美国，订婚的情侣中，有一半多一点（53%）是交往2到5年后才订婚（The Knot 2024）\n1\n结婚\n人际关系↑ 幸福↑\n2\n先不结婚，一起住\n不办结婚登记 · 以后也可能结婚\n3\n再谈一阵子恋爱\n不急\n4\n分手\n从现在起把抉择交给自动",
+        "question": "",
+        "options": [
+          {
+            "k": "yes",
+            "label": "结婚",
+            "sub": ""
+          },
+          {
+            "k": "cohab",
+            "label": "先不结婚，一起住",
+            "sub": ""
+          },
+          {
+            "k": "wait",
+            "label": "再谈一阵子恋爱",
+            "sub": ""
+          },
+          {
+            "k": "part",
+            "label": "分手",
+            "sub": ""
+          }
+        ],
+        "optionsKnown": true,
+        "selectedK": "cohab",
+        "selectedLabel": "先不结婚，一起住",
+        "selectedSub": "",
+        "auto": false,
+        "autoEvidence": "trustedClick",
+        "selectionMode": "manual",
+        "optionsSource": "dom+hook",
+        "captureConfidence": "high",
+        "outcomeText": "抉择：先不结婚，一起住",
+        "decidedAt": "2026-11-20T07:45:49.923Z",
+        "decideMs": 14780,
+        "note": "",
+        "resolved": true,
+        "minimized": false,
+        "hadModal": true,
+        "preDone": null,
+        "preAuto": 0,
+        "possibleDuplicate": false,
+        "beforeStateAt": "2026-11-20T07:45:35.145Z",
+        "afterStateAt": "2026-11-20T07:45:49.964Z",
+        "hookId": "hc-mwooczmw-19",
+        "saveSelectedK": null
+      },
+      {
+        "id": "d21-mwoodnf4",
+        "seq": 21,
+        "source": "live",
+        "type": "choice",
+        "lifeId": "s1795160329798",
+        "decisionId": "petq",
+        "beforeStateId": "st-mwoodnf6-96",
+        "afterStateId": "st-mwoodpz9-98",
+        "at": "2026-11-20T07:46:20.752Z",
+        "age": 26,
+        "year": "2026年 · 推估 · Daan Smit · 1年≈12秒",
+        "title": "重大抉择",
+        "body": "要养宠物吗？\n\n你在收容所看到了等待新家人的动物。\n\n在比利时，估计约有45%的家庭养狗或猫（根据APPA、FEDIAF、KB、GfK调查推算的大略数值）\n取名字\n1\n养一只狗\n一年约5,071元 · 相伴10至15年\n2\n养一只猫\n一年约3,381元 · 相伴12至18年\n3–6\n养一只小动物\n每年约1,014元~1,690元\n鱼\n可相伴4~9年\n仓鼠\n可相伴2~3年\n鹦鹉\n可相伴6~12年\n兔子\n可相伴8~12年\n7\n现在还不是时候\n8\n不养宠物\n以后不会再问\n从现在起把抉择交给自动",
+        "question": "",
+        "options": [
+          {
+            "k": "dog",
+            "label": "养一只狗",
+            "sub": ""
+          },
+          {
+            "k": "cat",
+            "label": "养一只猫",
+            "sub": ""
+          },
+          {
+            "k": "pk_f",
+            "label": "鱼",
+            "sub": "每年约1,352元 · 可相伴4~9年"
+          },
+          {
+            "k": "pk_h",
+            "label": "仓鼠",
+            "sub": "每年约1,014元 · 可相伴2~3年"
+          },
+          {
+            "k": "pk_b",
+            "label": "鹦鹉",
+            "sub": "每年约1,352元 · 可相伴6~12年"
+          },
+          {
+            "k": "pk_r",
+            "label": "兔子",
+            "sub": "每年约1,690元 · 可相伴8~12年"
+          },
+          {
+            "k": "no",
+            "label": "现在还不是时候",
+            "sub": ""
+          },
+          {
+            "k": "never",
+            "label": "不养宠物",
+            "sub": ""
+          }
+        ],
+        "optionsKnown": true,
+        "selectedK": "cat",
+        "selectedLabel": "养一只猫",
+        "selectedSub": "",
+        "auto": false,
+        "autoEvidence": "trustedClick",
+        "selectionMode": "manual",
+        "optionsSource": "dom",
+        "captureConfidence": "high",
+        "outcomeText": "",
+        "decidedAt": "2026-11-20T07:46:24.036Z",
+        "decideMs": 3284,
+        "note": "",
+        "resolved": true,
+        "minimized": false,
+        "hadModal": true,
+        "preDone": null,
+        "preAuto": 0,
+        "possibleDuplicate": false,
+        "beforeStateAt": "2026-11-20T07:46:20.754Z",
+        "afterStateAt": "2026-11-20T07:46:24.069Z",
+        "saveSelectedK": null
+      },
+      {
+        "id": "d22-mwoodwse",
+        "seq": 22,
+        "source": "live",
+        "type": "choice",
+        "lifeId": "s1795160329798",
+        "decisionId": "biz",
+        "beforeStateId": "st-mwoodwsg-100",
+        "afterStateId": "st-mwooe3ed-102",
+        "at": "2026-11-20T07:46:32.894Z",
+        "age": 27,
+        "year": "2027年 · 推估 · Daan Smit · 1年≈12秒",
+        "title": "重大抉择",
+        "body": "要开始自己的事业吗？\n\n你花了一年研究创业，可行的点子缩小到几个。要试哪一个呢？\n\n新成立的公司约有一半会在5年内关门。餐饮和零售关得更多，靠技术的行业关得较少（OECD企业人口统计，美国劳工统计局）\n1\n开设自己的音乐教室\n约26.9万元 · 接近你熟悉的工作\n2\n开始在网路上贩售\n约13.5万元 · 关门的很多\n3\n开一家咖啡店\n约32.3万元 · 关门的很多\n4\n开一家手机行\n约26.9万元\n5\n还不是时候\n继续现在的工作\n从现在起把抉择交给自动",
+        "question": "",
+        "options": [
+          {
+            "k": "academy",
+            "label": "开设自己的音乐教室",
+            "sub": ""
+          },
+          {
+            "k": "online",
+            "label": "开始在网路上贩售",
+            "sub": ""
+          },
+          {
+            "k": "food",
+            "label": "开一家咖啡店",
+            "sub": ""
+          },
+          {
+            "k": "shop",
+            "label": "开一家手机行",
+            "sub": ""
+          },
+          {
+            "k": "no",
+            "label": "还不是时候",
+            "sub": ""
+          }
+        ],
+        "optionsKnown": true,
+        "selectedK": "academy",
+        "selectedLabel": "开设自己的音乐教室",
+        "selectedSub": "",
+        "auto": false,
+        "autoEvidence": "trustedClick",
+        "selectionMode": "manual",
+        "optionsSource": "dom+hook",
+        "captureConfidence": "high",
+        "outcomeText": "抉择：开设自己的音乐教室",
+        "decidedAt": "2026-11-20T07:46:41.420Z",
+        "decideMs": 8526,
+        "note": "",
+        "resolved": true,
+        "minimized": false,
+        "hadModal": true,
+        "preDone": null,
+        "preAuto": 0,
+        "possibleDuplicate": false,
+        "beforeStateAt": "2026-11-20T07:46:32.896Z",
+        "afterStateAt": "2026-11-20T07:46:41.461Z",
+        "hookId": "hc-mwooe3dc-21",
+        "saveSelectedK": null
+      },
+      {
+        "id": "d23-mwooe3e3",
+        "seq": 23,
+        "source": "live",
+        "type": "choice",
+        "lifeId": "s1795160329798",
+        "decisionId": "bizfund",
+        "beforeStateId": "st-mwooe3ef-103",
+        "afterStateId": "st-mwooe7ch-105",
+        "at": "2026-11-20T07:46:41.451Z",
+        "age": 27,
+        "year": "2027年 · 推估 · Daan Smit · 1年≈12秒",
+        "title": "重大抉择",
+        "body": "创业资金要怎么筹？\n\n要像样地经营音乐教室，大约需要26.9万元。你现在手上有13,198元。\n\n新创业的人有一半以上是用自己的存款起步，向银行贷款或与人合伙的比较少（美国人口普查局 Annual Business Survey）\n1\n贷款，好好起步\n约26.9万元 · 做不起来就会留下债务\n2\n和合伙人一起创业\n成本和利润各分一半 · 可能会起争执\n3\n打消念头\n继续现在的工作\n–\n用存款小规模起步\n需要约10.8万元的存款\n–\n靠父母帮忙，好好起步\n家里的经济负担不起\n从现在起把抉择交给自动",
+        "question": "",
+        "options": [
+          {
+            "k": "loan",
+            "label": "贷款，好好起步",
+            "sub": ""
+          },
+          {
+            "k": "partner",
+            "label": "和合伙人一起创业",
+            "sub": ""
+          },
+          {
+            "k": "no",
+            "label": "打消念头",
+            "sub": ""
+          }
+        ],
+        "optionsKnown": true,
+        "selectedK": "loan",
+        "selectedLabel": "贷款，好好起步",
+        "selectedSub": "",
+        "auto": false,
+        "autoEvidence": "trustedClick",
+        "selectionMode": "manual",
+        "optionsSource": "dom+hook",
+        "captureConfidence": "high",
+        "outcomeText": "抉择：贷款，好好起步",
+        "decidedAt": "2026-11-20T07:46:46.531Z",
+        "decideMs": 5080,
+        "note": "",
+        "resolved": true,
+        "minimized": false,
+        "hadModal": true,
+        "preDone": null,
+        "preAuto": 0,
+        "possibleDuplicate": false,
+        "beforeStateAt": "2026-11-20T07:46:41.463Z",
+        "afterStateAt": "2026-11-20T07:46:46.577Z",
+        "hookId": "hc-mwooe7bb-22",
+        "saveSelectedK": null
+      },
+      {
+        "id": "d24-mwooea72",
+        "seq": 24,
+        "source": "live",
+        "type": "choice",
+        "lifeId": "s1795160329798",
+        "decisionId": "hobby",
+        "beforeStateId": "st-mwooea75-106",
+        "afterStateId": "st-mwooef7s-108",
+        "at": "2026-11-20T07:46:50.270Z",
+        "age": 27,
+        "year": "2027年 · 推估 · Daan Smit · 1年≈12秒",
+        "title": "重大抉择",
+        "body": "要开始新的兴趣吗？\n\n你想到了几件空闲时想试试看的事。目前的兴趣：足球、唱歌·演奏乐器\n\n1\n健身\n幸福+ 健康+ 要花钱\n2\n爬山·散步\n幸福+ 健康+\n3\n露营\n幸福+ 健康+ 人际关系+ 要花钱\n4\n现在的兴趣就够了\n从现在起把抉择交给自动",
+        "question": "",
+        "options": [
+          {
+            "k": "gym",
+            "label": "健身",
+            "sub": ""
+          },
+          {
+            "k": "hiking",
+            "label": "爬山·散步",
+            "sub": ""
+          },
+          {
+            "k": "camping",
+            "label": "露营",
+            "sub": ""
+          },
+          {
+            "k": "none",
+            "label": "现在的兴趣就够了",
+            "sub": ""
+          }
+        ],
+        "optionsKnown": true,
+        "selectedK": "camping",
+        "selectedLabel": "露营",
+        "selectedSub": "",
+        "auto": false,
+        "autoEvidence": "trustedClick",
+        "selectionMode": "manual",
+        "optionsSource": "dom",
+        "captureConfidence": "high",
+        "outcomeText": "",
+        "decidedAt": "2026-11-20T07:46:56.732Z",
+        "decideMs": 6461,
+        "note": "",
+        "resolved": true,
+        "minimized": false,
+        "hadModal": true,
+        "preDone": null,
+        "preAuto": 0,
+        "possibleDuplicate": false,
+        "beforeStateAt": "2026-11-20T07:46:50.273Z",
+        "afterStateAt": "2026-11-20T07:46:56.776Z",
+        "saveSelectedK": null
+      },
+      {
+        "id": "d25-mwooeko9",
+        "seq": 25,
+        "source": "live",
+        "type": "choice",
+        "lifeId": "s1795160329798",
+        "decisionId": "cohabwed",
+        "beforeStateId": "st-mwooekob-110",
+        "afterStateId": "st-mwooepti-112",
+        "at": "2026-11-20T07:47:03.849Z",
+        "age": 28,
+        "year": "2028年 · 推估 · Daan Smit · 1年≈12秒",
+        "title": "重大抉择",
+        "body": "该结婚了吗？\n\n你和Mees已经同居2年了。两人谈到要去登记结婚，办一场小小的婚礼。\n\n在欧盟，超过40%的婴儿由未婚的父母所生（欧盟统计局 2022）\n1\n结婚\n登记结婚 · 小型婚礼\n2\n像现在这样一起生活\n从现在起把抉择交给自动",
+        "question": "",
+        "options": [
+          {
+            "k": "wed",
+            "label": "结婚",
+            "sub": ""
+          },
+          {
+            "k": "stay",
+            "label": "像现在这样一起生活",
+            "sub": ""
+          }
+        ],
+        "optionsKnown": true,
+        "selectedK": "stay",
+        "selectedLabel": "像现在这样一起生活",
+        "selectedSub": "",
+        "auto": false,
+        "autoEvidence": "trustedClick",
+        "selectionMode": "manual",
+        "optionsSource": "dom+hook",
+        "captureConfidence": "high",
+        "outcomeText": "抉择：像现在这样一起生活",
+        "decidedAt": "2026-11-20T07:47:10.485Z",
+        "decideMs": 6636,
+        "note": "",
+        "resolved": true,
+        "minimized": false,
+        "hadModal": true,
+        "preDone": null,
+        "preAuto": 0,
+        "possibleDuplicate": false,
+        "beforeStateAt": "2026-11-20T07:47:03.851Z",
+        "afterStateAt": "2026-11-20T07:47:10.518Z",
+        "hookId": "hc-mwooepsq-24",
+        "saveSelectedK": null
+      },
+      {
+        "id": "d26-mwoofpcz",
+        "seq": 26,
+        "source": "live",
+        "type": "choice",
+        "lifeId": "s1795160329798",
+        "decisionId": "thanks",
+        "beforeStateId": "st-mwoofpd1-115",
+        "afterStateId": "st-mwoofqoj-117",
+        "at": "2026-11-20T07:47:56.579Z",
+        "age": 29,
+        "year": "2029年 · 推估 · Daan Smit · 1年≈12秒",
+        "title": "重大抉择",
+        "body": "一句谢谢\n\n你想不起上一次对母亲说谢谢是什么时候了。\n\n母亲62岁\n\n1\n现在打电话说\n2\n下次见面再说吧\n从现在起把抉择交给自动",
+        "question": "",
+        "options": [
+          {
+            "k": "call",
+            "label": "现在打电话说",
+            "sub": ""
+          },
+          {
+            "k": "next",
+            "label": "下次见面再说吧",
+            "sub": ""
+          }
+        ],
+        "optionsKnown": true,
+        "selectedK": "call",
+        "selectedLabel": "现在打电话说",
+        "selectedSub": "",
+        "auto": false,
+        "autoEvidence": "trustedClick",
+        "selectionMode": "manual",
+        "optionsSource": "dom+hook",
+        "captureConfidence": "high",
+        "outcomeText": "抉择：现在打电话说",
+        "decidedAt": "2026-11-20T07:47:58.261Z",
+        "decideMs": 1682,
+        "note": "",
+        "resolved": true,
+        "minimized": false,
+        "hadModal": true,
+        "preDone": null,
+        "preAuto": 0,
+        "possibleDuplicate": false,
+        "beforeStateAt": "2026-11-20T07:47:56.581Z",
+        "afterStateAt": "2026-11-20T07:47:58.291Z",
+        "hookId": "hc-mwoofqns-25",
+        "saveSelectedK": null
+      },
+      {
+        "id": "d27-mwoofzgk",
+        "seq": 27,
+        "source": "live",
+        "type": "choice",
+        "lifeId": "s1795160329798",
+        "decisionId": "reflect",
+        "beforeStateId": "st-mwoofzgm-119",
+        "afterStateId": "st-mwoog1qt-121",
+        "at": "2026-11-20T07:48:09.668Z",
+        "age": 30,
+        "year": "2030年 · 推估 · Daan Smit · 1年≈12秒",
+        "title": "暂停片刻",
+        "body": "Daan，30岁\n\n这个人一年的收入，在全世界的人当中排在前8%。比利时的网路使用率为96%，住在城市的人占88%。\n\n同一秒出生的人们——Lyudmila（俄罗斯）：销售员 · 已婚 · 1个孩子 · 陈丹（中国）：总务专员 · 已婚 · 1个孩子 · Brenda（美国）：工地领班 · 与伴侣同住 · Geeta（印度）：照顾家人 · 已婚 · 1个孩子\n\nDaan今天最感谢的，会是什么呢？\n\n1\n写下来，继续生活\n写下的文字会留在这一生的纪录里\n2\n放在心里，继续生活\n从现在起把抉择交给自动\n以后不再显示这个视窗",
+        "question": "Daan今天最感谢的，会是什么呢？",
+        "options": [
+          {
+            "k": "write",
+            "label": "写下来，继续生活",
+            "sub": ""
+          },
+          {
+            "k": "skip",
+            "label": "放在心里，继续生活",
+            "sub": ""
+          }
+        ],
+        "optionsKnown": true,
+        "selectedK": "skip",
+        "selectedLabel": "放在心里，继续生活",
+        "selectedSub": "",
+        "auto": false,
+        "autoEvidence": "trustedClick",
+        "selectionMode": "manual",
+        "optionsSource": "dom+hook",
+        "captureConfidence": "high",
+        "outcomeText": "",
+        "decidedAt": "2026-11-20T07:48:12.597Z",
+        "decideMs": 2929,
+        "note": "",
+        "resolved": true,
+        "minimized": false,
+        "hadModal": true,
+        "preDone": null,
+        "preAuto": 0,
+        "possibleDuplicate": false,
+        "beforeStateAt": "2026-11-20T07:48:09.670Z",
+        "afterStateAt": "2026-11-20T07:48:12.629Z",
+        "hookId": "hc-mwoog1q0-26",
+        "saveSelectedK": null
+      },
+      {
+        "id": "d28-mwoog4rw",
+        "seq": 28,
+        "source": "live",
+        "type": "choice",
+        "lifeId": "s1795160329798",
+        "decisionId": "buy",
+        "beforeStateId": "st-mwoog4rx-122",
+        "afterStateId": "st-mwoog9g0-124",
+        "at": "2026-11-20T07:48:16.556Z",
+        "age": 30,
+        "year": "2030年 · 推估 · Daan Smit · 1年≈12秒",
+        "title": "重大抉择",
+        "body": "要分期付款买汽车吗？\n\n价格约62,979元（以中国大陆物价计）。你现在的存款是23,875元，没办法一次付清。如果分4年付款，这段期间都会背着债务，还要付利息。现在每天通勤要4小时，开车的话大约2小时20分钟。\n\n在美国，超过80%的新车是靠贷款或租赁取得的（Experian，2025年第三季）\n1\n分期付款买\n4年分期 · 负债约39,105元 · 要付利息 · 幸福 +8\n2\n存够钱再买\n不必负债\n从现在起把抉择交给自动",
+        "question": "",
+        "options": [
+          {
+            "k": "loan",
+            "label": "分期付款买",
+            "sub": ""
+          },
+          {
+            "k": "no",
+            "label": "存够钱再买",
+            "sub": ""
+          }
+        ],
+        "optionsKnown": true,
+        "selectedK": "loan",
+        "selectedLabel": "分期付款买",
+        "selectedSub": "",
+        "auto": false,
+        "autoEvidence": "trustedClick",
+        "selectionMode": "manual",
+        "optionsSource": "dom+hook",
+        "captureConfidence": "high",
+        "outcomeText": "抉择：分期付款买",
+        "decidedAt": "2026-11-20T07:48:22.549Z",
+        "decideMs": 5993,
+        "note": "",
+        "resolved": true,
+        "minimized": false,
+        "hadModal": true,
+        "preDone": null,
+        "preAuto": 0,
+        "possibleDuplicate": false,
+        "beforeStateAt": "2026-11-20T07:48:16.557Z",
+        "afterStateAt": "2026-11-20T07:48:22.608Z",
+        "hookId": "hc-mwoog9ei-27",
+        "saveSelectedK": null
+      },
+      {
+        "id": "d29-mwooh4ew",
+        "seq": 29,
+        "source": "live",
+        "type": "choice",
+        "lifeId": "s1795160329798",
+        "decisionId": "movenear",
+        "beforeStateId": "st-mwooh4ey-129",
+        "afterStateId": "st-mwoohaf9-131",
+        "at": "2026-11-20T07:49:02.744Z",
+        "age": 32,
+        "year": "2032年 · 推估 · Daan Smit · 1年≈12秒",
+        "title": "重大抉择",
+        "body": "要搬到工作地点附近吗？\n\n在布鲁塞尔，你每天通勤要花2小时20分钟。搬到工作地点附近房租会比较贵，但每天都能多出这些时间。\n\n一年光是通勤就约560小时，换算成每天工作8小时，相当于70个工作天\n1\n搬到工作地点附近\n搬家费约22,524元 · 每年居住费用 ↑\n2\n继续从现在的住处通勤\n从现在起把抉择交给自动",
+        "question": "",
+        "options": [
+          {
+            "k": "move",
+            "label": "搬到工作地点附近",
+            "sub": ""
+          },
+          {
+            "k": "stay",
+            "label": "继续从现在的住处通勤",
+            "sub": ""
+          }
+        ],
+        "optionsKnown": true,
+        "selectedK": "move",
+        "selectedLabel": "搬到工作地点附近",
+        "selectedSub": "",
+        "auto": false,
+        "autoEvidence": "trustedClick",
+        "selectionMode": "manual",
+        "optionsSource": "dom+hook",
+        "captureConfidence": "high",
+        "outcomeText": "抉择：搬到工作地点附近",
+        "decidedAt": "2026-11-20T07:49:10.502Z",
+        "decideMs": 7758,
+        "note": "",
+        "resolved": true,
+        "minimized": false,
+        "hadModal": true,
+        "preDone": null,
+        "preAuto": 0,
+        "possibleDuplicate": false,
+        "beforeStateAt": "2026-11-20T07:49:02.746Z",
+        "afterStateAt": "2026-11-20T07:49:10.533Z",
+        "hookId": "hc-mwoohaeh-28",
+        "saveSelectedK": null
+      },
+      {
+        "id": "d30-mwoohgnw",
+        "seq": 30,
+        "source": "live",
+        "type": "choice",
+        "lifeId": "s1795160329798",
+        "decisionId": "disaster",
+        "beforeStateId": "st-mwoohgny-133",
+        "afterStateId": "st-mwoohjqk-135",
+        "at": "2026-11-20T07:49:18.620Z",
+        "age": 33,
+        "year": "2033年 · 推估 · Daan Smit · 1年≈12秒",
+        "title": "重大抉择",
+        "body": "洪水来袭\n\n家园和社区都受到严重损害。\n\n2023年，全世界约有2,640万人因自然灾害在本国境内流离失所（IDMC 2024）\n1\n借钱重建\n财产↓ 迅速复原\n2\n等待救援\n健康·幸福↓\n从现在起把抉择交给自动",
+        "question": "",
+        "options": [
+          {
+            "k": "rebuild",
+            "label": "借钱重建",
+            "sub": ""
+          },
+          {
+            "k": "wait",
+            "label": "等待救援",
+            "sub": ""
+          }
+        ],
+        "optionsKnown": true,
+        "selectedK": "rebuild",
+        "selectedLabel": "借钱重建",
+        "selectedSub": "",
+        "auto": false,
+        "autoEvidence": "trustedClick",
+        "selectionMode": "manual",
+        "optionsSource": "dom+hook",
+        "captureConfidence": "high",
+        "outcomeText": "抉择：借钱重建",
+        "decidedAt": "2026-11-20T07:49:22.574Z",
+        "decideMs": 3954,
+        "note": "",
+        "resolved": true,
+        "minimized": false,
+        "hadModal": true,
+        "preDone": null,
+        "preAuto": 0,
+        "possibleDuplicate": false,
+        "beforeStateAt": "2026-11-20T07:49:18.622Z",
+        "afterStateAt": "2026-11-20T07:49:22.604Z",
+        "hookId": "hc-mwoohjpt-29",
+        "saveSelectedK": null
+      },
+      {
+        "id": "d31-mwooi46v",
+        "seq": 31,
+        "source": "live",
+        "type": "choice",
+        "lifeId": "s1795160329798",
+        "decisionId": "cohabwed",
+        "beforeStateId": "st-mwooi46y-138",
+        "afterStateId": "st-mwooi5tn-140",
+        "at": "2026-11-20T07:49:49.111Z",
+        "age": 34,
+        "year": "2034年 · 推估 · Daan Smit · 1年≈12秒",
+        "title": "重大抉择",
+        "body": "该结婚了吗？\n\n你和Mees已经同居8年了。两人谈到要去登记结婚，办一场小小的婚礼。\n\n在欧盟，超过40%的婴儿由未婚的父母所生（欧盟统计局 2022）\n1\n结婚\n登记结婚 · 小型婚礼\n2\n像现在这样一起生活\n从现在起把抉择交给自动",
+        "question": "",
+        "options": [
+          {
+            "k": "wed",
+            "label": "结婚",
+            "sub": ""
+          },
+          {
+            "k": "stay",
+            "label": "像现在这样一起生活",
+            "sub": ""
+          }
+        ],
+        "optionsKnown": true,
+        "selectedK": "wed",
+        "selectedLabel": "结婚",
+        "selectedSub": "",
+        "auto": false,
+        "autoEvidence": "trustedClick",
+        "selectionMode": "manual",
+        "optionsSource": "dom",
+        "captureConfidence": "high",
+        "outcomeText": "",
+        "decidedAt": "2026-11-20T07:49:51.191Z",
+        "decideMs": 2080,
+        "note": "",
+        "resolved": true,
+        "minimized": false,
+        "hadModal": true,
+        "preDone": null,
+        "preAuto": 0,
+        "possibleDuplicate": false,
+        "beforeStateAt": "2026-11-20T07:49:49.114Z",
+        "afterStateAt": "2026-11-20T07:49:51.227Z",
+        "saveSelectedK": null
+      },
+      {
+        "id": "d32-mwooio7d",
+        "seq": 32,
+        "source": "live",
+        "type": "choice",
+        "lifeId": "s1795160329798",
+        "decisionId": "sskids",
+        "beforeStateId": "st-mwooio7f-143",
+        "afterStateId": "st-mwooiqay-145",
+        "at": "2026-11-20T07:50:15.049Z",
+        "age": 36,
+        "year": "2036年 · 推估 · Daan Smit · 1年≈12秒",
+        "title": "重大抉择",
+        "body": "要迎接一个孩子成为家人吗？\n\n你和Mees聊到了孩子的事。\n\n在美国，同性已婚伴侣中约15%养育未满18岁的子女。其他已婚夫妻约为38%（美国人口普查局 2019）\n1\n向收养机构申请咨询\n家庭访视与课程 · 约1年\n2\n现在先两个人过日子\n从现在起把抉择交给自动",
+        "question": "",
+        "options": [
+          {
+            "k": "adopt",
+            "label": "向收养机构申请咨询",
+            "sub": ""
+          },
+          {
+            "k": "no",
+            "label": "现在先两个人过日子",
+            "sub": ""
+          }
+        ],
+        "optionsKnown": true,
+        "selectedK": "adopt",
+        "selectedLabel": "向收养机构申请咨询",
+        "selectedSub": "",
+        "auto": false,
+        "autoEvidence": "trustedClick",
+        "selectionMode": "manual",
+        "optionsSource": "dom+hook",
+        "captureConfidence": "high",
+        "outcomeText": "抉择：向收养机构申请咨询",
+        "decidedAt": "2026-11-20T07:50:17.727Z",
+        "decideMs": 2678,
+        "note": "",
+        "resolved": true,
+        "minimized": false,
+        "hadModal": true,
+        "preDone": null,
+        "preAuto": 0,
+        "possibleDuplicate": false,
+        "beforeStateAt": "2026-11-20T07:50:15.051Z",
+        "afterStateAt": "2026-11-20T07:50:17.770Z",
+        "hookId": "hc-mwooiq9x-31",
+        "saveSelectedK": null
+      },
+      {
+        "id": "d33-mwoojgsr",
+        "seq": 33,
+        "source": "live",
+        "type": "choice",
+        "lifeId": "s1795160329798",
+        "decisionId": "adopt",
+        "beforeStateId": "st-mwoojgst-147",
+        "afterStateId": "st-mwoojj1r-149",
+        "at": "2026-11-20T07:50:52.107Z",
+        "age": 37,
+        "year": "2037年 · 推估 · Daan Smit · 1年≈12秒",
+        "title": "重大抉择",
+        "body": "与孩子相遇\n\n机构打电话来了。1岁的女孩Eva Smit正在等待新的家庭。\n\n全世界每年约有26万名孩子被收养（联合国经济和社会事务部 2009）\n1\n接纳为家人\n幸福↑ 养育费↑\n2\n还不是时候\n从现在起把抉择交给自动",
+        "question": "",
+        "options": [
+          {
+            "k": "yes",
+            "label": "接纳为家人",
+            "sub": ""
+          },
+          {
+            "k": "no",
+            "label": "还不是时候",
+            "sub": ""
+          }
+        ],
+        "optionsKnown": true,
+        "selectedK": "yes",
+        "selectedLabel": "接纳为家人",
+        "selectedSub": "",
+        "auto": false,
+        "autoEvidence": "trustedClick",
+        "selectionMode": "manual",
+        "optionsSource": "dom+hook",
+        "captureConfidence": "high",
+        "outcomeText": "抉择：接纳为家人",
+        "decidedAt": "2026-11-20T07:50:54.991Z",
+        "decideMs": 2884,
+        "note": "",
+        "resolved": true,
+        "minimized": false,
+        "hadModal": true,
+        "preDone": null,
+        "preAuto": 0,
+        "possibleDuplicate": false,
+        "beforeStateAt": "2026-11-20T07:50:52.109Z",
+        "afterStateAt": "2026-11-20T07:50:55.023Z",
+        "hookId": "hc-mwoojj0y-32",
+        "saveSelectedK": null
+      },
+      {
+        "id": "d34-mwoojltm",
+        "seq": 34,
+        "source": "live",
+        "type": "choice",
+        "lifeId": "s1795160329798",
+        "decisionId": "illness",
+        "beforeStateId": "st-mwoojlto-150",
+        "afterStateId": "st-mwoojnf4-152",
+        "at": "2026-11-20T07:50:58.618Z",
+        "age": 37,
+        "year": "2037年 · 推估 · Daan Smit · 1年≈12秒",
+        "title": "重大抉择",
+        "body": "跌倒受了重伤\n\n跌倒后手脚肿得厉害，稍微动一下就痛。医院治疗费的自付额约13,741元（以中国大陆物价计）。你的存款有19,965元。\n\n比利时医疗支出的自付比例：20% · 全球约有20亿人因医疗费用陷入经济困境（WHO·世界银行 2023）\n1\n到医院接受治疗\n约13,741元\n2\n靠药局和传统疗法撑过去\n省钱但有风险\n从现在起把抉择交给自动",
+        "question": "",
+        "options": [
+          {
+            "k": "hospital",
+            "label": "到医院接受治疗",
+            "sub": ""
+          },
+          {
+            "k": "cheap",
+            "label": "靠药局和传统疗法撑过去",
+            "sub": ""
+          }
+        ],
+        "optionsKnown": true,
+        "selectedK": "hospital",
+        "selectedLabel": "到医院接受治疗",
+        "selectedSub": "",
+        "auto": false,
+        "autoEvidence": "trustedClick",
+        "selectionMode": "manual",
+        "optionsSource": "dom+hook",
+        "captureConfidence": "high",
+        "outcomeText": "抉择：到医院接受治疗",
+        "decidedAt": "2026-11-20T07:51:00.648Z",
+        "decideMs": 2030,
+        "note": "",
+        "resolved": true,
+        "minimized": false,
+        "hadModal": true,
+        "preDone": null,
+        "preAuto": 0,
+        "possibleDuplicate": false,
+        "beforeStateAt": "2026-11-20T07:50:58.620Z",
+        "afterStateAt": "2026-11-20T07:51:00.688Z",
+        "hookId": "hc-mwoojne4-33",
+        "saveSelectedK": null
+      },
+      {
+        "id": "d35-mwooju3g",
+        "seq": 35,
+        "source": "live",
+        "type": "choice",
+        "lifeId": "s1795160329798",
+        "decisionId": "bizop",
+        "beforeStateId": "st-mwooju3i-154",
+        "afterStateId": "st-mwook186-156",
+        "at": "2026-11-20T07:51:09.340Z",
+        "age": 38,
+        "year": "2038年 · 推估 · Daan Smit · 1年≈12秒",
+        "title": "重大抉择",
+        "body": "上门的人变少的一年\n\n这几个月来，上门的人变少了。照这样下去，很难撑得住。\n\n1\n降价撑下去\n收入减少，但留住上门的人\n2\n缩小规模撑下去\n少接工作、压低开销 · 收入减少，但关门的风险也降低\n3\n贷款撑过去\n负债约79,226元\n4\n趁还不太晚收掉\n保住剩下的钱\n从现在起把抉择交给自动",
+        "question": "",
+        "options": [
+          {
+            "k": "price",
+            "label": "降价撑下去",
+            "sub": ""
+          },
+          {
+            "k": "shrink",
+            "label": "缩小规模撑下去",
+            "sub": ""
+          },
+          {
+            "k": "borrow",
+            "label": "贷款撑过去",
+            "sub": ""
+          },
+          {
+            "k": "close",
+            "label": "趁还不太晚收掉",
+            "sub": ""
+          }
+        ],
+        "optionsKnown": true,
+        "selectedK": "price",
+        "selectedLabel": "降价撑下去",
+        "selectedSub": "",
+        "auto": false,
+        "autoEvidence": "trustedClick",
+        "selectionMode": "manual",
+        "optionsSource": "dom+hook",
+        "captureConfidence": "high",
+        "outcomeText": "抉择：降价撑下去",
+        "decidedAt": "2026-11-20T07:51:18.551Z",
+        "decideMs": 9211,
+        "note": "",
+        "resolved": true,
+        "minimized": false,
+        "hadModal": true,
+        "preDone": null,
+        "preAuto": 0,
+        "possibleDuplicate": false,
+        "beforeStateAt": "2026-11-20T07:51:09.342Z",
+        "afterStateAt": "2026-11-20T07:51:18.582Z",
+        "hookId": "hc-mwook17f-34",
+        "saveSelectedK": null
+      },
+      {
+        "id": "d36-mwookpxw",
+        "seq": 36,
+        "source": "live",
+        "type": "choice",
+        "lifeId": "s1795160329798",
+        "decisionId": "mentor",
+        "beforeStateId": "st-mwookpxz-159",
+        "afterStateId": "st-mwookr7t-161",
+        "at": "2026-11-20T07:51:50.612Z",
+        "age": 40,
+        "year": "2040年 · 推估 · Daan Smit · 1年≈12秒",
+        "title": "重大抉择",
+        "body": "后辈的烦恼\n\n职场上一位年轻的后辈向你吐露心事，说对未来感到茫然。\n\n1\n抽出时间听对方说\n2\n说自己很忙，改天再说\n从现在起把抉择交给自动",
+        "question": "",
+        "options": [
+          {
+            "k": "help",
+            "label": "抽出时间听对方说",
+            "sub": ""
+          },
+          {
+            "k": "busy",
+            "label": "说自己很忙，改天再说",
+            "sub": ""
+          }
+        ],
+        "optionsKnown": true,
+        "selectedK": "help",
+        "selectedLabel": "抽出时间听对方说",
+        "selectedSub": "",
+        "auto": false,
+        "autoEvidence": "trustedClick",
+        "selectionMode": "manual",
+        "optionsSource": "dom+hook",
+        "captureConfidence": "high",
+        "outcomeText": "抉择：抽出时间听对方说",
+        "decidedAt": "2026-11-20T07:51:52.224Z",
+        "decideMs": 1612,
+        "note": "",
+        "resolved": true,
+        "minimized": false,
+        "hadModal": true,
+        "preDone": null,
+        "preAuto": 0,
+        "possibleDuplicate": false,
+        "beforeStateAt": "2026-11-20T07:51:50.615Z",
+        "afterStateAt": "2026-11-20T07:51:52.265Z",
+        "hookId": "hc-mwookr6t-35",
+        "saveSelectedK": null
+      },
+      {
+        "id": "d37-mwoolota",
+        "seq": 37,
+        "source": "live",
+        "type": "choice",
+        "lifeId": "s1795160329798",
+        "decisionId": "petsick",
+        "beforeStateId": "st-mwoolotc-165",
+        "afterStateId": "st-mwoolwde-167",
+        "at": "2026-11-20T07:52:35.806Z",
+        "age": 41,
+        "year": "2041年 · 推估 · Daan Smit · 1年≈12秒",
+        "title": "重大抉择",
+        "body": "Bella生病了\n\n15岁的Bella已经好几天不吃东西了。兽医说，治疗的话也许会好。\n\n1\n带去治疗\n约17,982元 · 可能会好，也可能不会\n2\n陪在身边，让牠安详离开\n从现在起把抉择交给自动",
+        "question": "",
+        "options": [
+          {
+            "k": "treat",
+            "label": "带去治疗",
+            "sub": ""
+          },
+          {
+            "k": "comfort",
+            "label": "陪在身边，让牠安详离开",
+            "sub": ""
+          }
+        ],
+        "optionsKnown": true,
+        "selectedK": "comfort",
+        "selectedLabel": "陪在身边，让牠安详离开",
+        "selectedSub": "",
+        "auto": false,
+        "autoEvidence": "trustedClick",
+        "selectionMode": "manual",
+        "optionsSource": "dom",
+        "captureConfidence": "high",
+        "outcomeText": "",
+        "decidedAt": "2026-11-20T07:52:45.569Z",
+        "decideMs": 9763,
+        "note": "",
+        "resolved": true,
+        "minimized": false,
+        "hadModal": true,
+        "preDone": null,
+        "preAuto": 0,
+        "possibleDuplicate": false,
+        "beforeStateAt": "2026-11-20T07:52:35.808Z",
+        "afterStateAt": "2026-11-20T07:52:45.602Z",
+        "saveSelectedK": null
+      },
+      {
+        "id": "d38-mwoolyq7",
+        "seq": 38,
+        "source": "live",
+        "type": "choice",
+        "lifeId": "s1795160329798",
+        "decisionId": "pbiz",
+        "beforeStateId": "st-mwoolyqa-168",
+        "afterStateId": "st-mwoom3uf-170",
+        "at": "2026-11-20T07:52:48.655Z",
+        "age": 41,
+        "year": "2041年 · 推估 · Daan Smit · 1年≈12秒",
+        "title": "重大抉择",
+        "body": "配偶想开一家店\n\n配偶Mees说，想开一家梦想已久的自己的店。这要动用存款中大约20.3万元（以中国大陆物价计）。\n\n新开的小店约有一半会在5年内关门（美国劳工统计局）\n1\n提议一起试试看\n成功的话收入↑ · 失败就负债\n2\n劝说现在还不是时候\n人际关系↓\n从现在起把抉择交给自动",
+        "question": "",
+        "options": [
+          {
+            "k": "go",
+            "label": "提议一起试试看",
+            "sub": ""
+          },
+          {
+            "k": "no",
+            "label": "劝说现在还不是时候",
+            "sub": ""
+          }
+        ],
+        "optionsKnown": true,
+        "selectedK": "go",
+        "selectedLabel": "提议一起试试看",
+        "selectedSub": "",
+        "auto": false,
+        "autoEvidence": "trustedClick",
+        "selectionMode": "manual",
+        "optionsSource": "dom+hook",
+        "captureConfidence": "high",
+        "outcomeText": "抉择：提议一起试试看",
+        "decidedAt": "2026-11-20T07:52:55.257Z",
+        "decideMs": 6602,
+        "note": "",
+        "resolved": true,
+        "minimized": false,
+        "hadModal": true,
+        "preDone": null,
+        "preAuto": 0,
+        "possibleDuplicate": false,
+        "beforeStateAt": "2026-11-20T07:52:48.658Z",
+        "afterStateAt": "2026-11-20T07:52:55.287Z",
+        "hookId": "hc-mwoom3tp-37",
+        "saveSelectedK": null
+      },
+      {
+        "id": "d39-mwoomb8z",
+        "seq": 39,
+        "source": "live",
+        "type": "choice",
+        "lifeId": "s1795160329798",
+        "decisionId": "sskids",
+        "beforeStateId": "st-mwoomb92-172",
+        "afterStateId": "st-mwoomh6o-174",
+        "at": "2026-11-20T07:53:04.883Z",
+        "age": 42,
+        "year": "2042年 · 推估 · Daan Smit · 1年≈12秒",
+        "title": "重大抉择",
+        "body": "要再迎接一个孩子吗？\n\n你和Mees聊到了孩子的事。\n\n在美国，同性已婚伴侣中约15%养育未满18岁的子女。其他已婚夫妻约为38%（美国人口普查局 2019）\n1\n向收养机构申请咨询\n家庭访视与课程 · 约1年\n2\n现在的孩子已经足够了\n从现在起把抉择交给自动",
+        "question": "",
+        "options": [
+          {
+            "k": "adopt",
+            "label": "向收养机构申请咨询",
+            "sub": ""
+          },
+          {
+            "k": "no",
+            "label": "现在的孩子已经足够了",
+            "sub": ""
+          }
+        ],
+        "optionsKnown": true,
+        "selectedK": "no",
+        "selectedLabel": "现在的孩子已经足够了",
+        "selectedSub": "",
+        "auto": false,
+        "autoEvidence": "trustedClick",
+        "selectionMode": "manual",
+        "optionsSource": "dom+hook",
+        "captureConfidence": "high",
+        "outcomeText": "",
+        "decidedAt": "2026-11-20T07:53:12.545Z",
+        "decideMs": 7662,
+        "note": "",
+        "resolved": true,
+        "minimized": false,
+        "hadModal": true,
+        "preDone": null,
+        "preAuto": 0,
+        "possibleDuplicate": false,
+        "beforeStateAt": "2026-11-20T07:53:04.886Z",
+        "afterStateAt": "2026-11-20T07:53:12.576Z",
+        "hookId": "hc-mwoomh5y-38",
+        "saveSelectedK": null
+      },
+      {
+        "id": "d40-mwoomixm",
+        "seq": 40,
+        "source": "live",
+        "type": "choice",
+        "lifeId": "s1795160329798",
+        "decisionId": "loan",
+        "beforeStateId": "st-mwoomixp-175",
+        "afterStateId": "st-mwoomqk4-177",
+        "at": "2026-11-20T07:53:14.842Z",
+        "age": 42,
+        "year": "2042年 · 推估 · Daan Smit · 1年≈12秒",
+        "title": "重大抉择",
+        "body": "债务越滚越大\n\n负债18.7万元（以中国大陆物价计）。\n\n1\n向家人求助\n人际关系↓\n2\n靠自己的收入慢慢还\n债务和利息照旧\n3\n办理转贷\n利息负担\n4\n卖掉汽车\n资产↓\n从现在起把抉择交给自动",
+        "question": "",
+        "options": [
+          {
+            "k": "family",
+            "label": "向家人求助",
+            "sub": ""
+          },
+          {
+            "k": "self",
+            "label": "靠自己的收入慢慢还",
+            "sub": ""
+          },
+          {
+            "k": "lender",
+            "label": "办理转贷",
+            "sub": ""
+          },
+          {
+            "k": "sellv",
+            "label": "卖掉汽车",
+            "sub": ""
+          }
+        ],
+        "optionsKnown": true,
+        "selectedK": "self",
+        "selectedLabel": "靠自己的收入慢慢还",
+        "selectedSub": "",
+        "auto": false,
+        "autoEvidence": "trustedClick",
+        "selectionMode": "manual",
+        "optionsSource": "dom+hook",
+        "captureConfidence": "high",
+        "outcomeText": "抉择：靠自己的收入慢慢还",
+        "decidedAt": "2026-11-20T07:53:24.690Z",
+        "decideMs": 9848,
+        "note": "",
+        "resolved": true,
+        "minimized": false,
+        "hadModal": true,
+        "preDone": null,
+        "preAuto": 0,
+        "possibleDuplicate": false,
+        "beforeStateAt": "2026-11-20T07:53:14.845Z",
+        "afterStateAt": "2026-11-20T07:53:24.724Z",
+        "hookId": "hc-mwoomqja-39",
+        "saveSelectedK": null
+      },
+      {
+        "id": "d41-mwoon7op",
+        "seq": 41,
+        "source": "live",
+        "type": "choice",
+        "lifeId": "s1795160329798",
+        "decisionId": "bizop",
+        "beforeStateId": "st-mwoon7os-180",
+        "afterStateId": "st-mwoone1u-182",
+        "at": "2026-11-20T07:53:46.921Z",
+        "age": 44,
+        "year": "2044年 · 推估 · Daan Smit · 1年≈12秒",
+        "title": "重大抉择",
+        "body": "上门的人变少的一年\n\n这几个月来，上门的人变少了。照这样下去，很难撑得住。\n\n1\n降价撑下去\n收入减少，但留住上门的人\n2\n缩小规模撑下去\n少接工作、压低开销 · 收入减少，但关门的风险也降低\n3\n贷款撑过去\n负债约83,602元\n4\n趁还不太晚收掉\n保住剩下的钱\n从现在起把抉择交给自动",
+        "question": "",
+        "options": [
+          {
+            "k": "price",
+            "label": "降价撑下去",
+            "sub": ""
+          },
+          {
+            "k": "shrink",
+            "label": "缩小规模撑下去",
+            "sub": ""
+          },
+          {
+            "k": "borrow",
+            "label": "贷款撑过去",
+            "sub": ""
+          },
+          {
+            "k": "close",
+            "label": "趁还不太晚收掉",
+            "sub": ""
+          }
+        ],
+        "optionsKnown": true,
+        "selectedK": "price",
+        "selectedLabel": "降价撑下去",
+        "selectedSub": "",
+        "auto": false,
+        "autoEvidence": "trustedClick",
+        "selectionMode": "manual",
+        "optionsSource": "dom",
+        "captureConfidence": "high",
+        "outcomeText": "",
+        "decidedAt": "2026-11-20T07:53:55.137Z",
+        "decideMs": 8216,
+        "note": "",
+        "resolved": true,
+        "minimized": false,
+        "hadModal": true,
+        "preDone": null,
+        "preAuto": 0,
+        "possibleDuplicate": false,
+        "beforeStateAt": "2026-11-20T07:53:46.924Z",
+        "afterStateAt": "2026-11-20T07:53:55.170Z",
+        "saveSelectedK": null
+      },
+      {
+        "id": "d42-mwoop2gx",
+        "seq": 42,
+        "source": "live",
+        "type": "choice",
+        "lifeId": "s1795160329798",
+        "decisionId": "petq",
+        "beforeStateId": "st-mwoop2h0-189",
+        "afterStateId": "st-mwoop48e-191",
+        "at": "2026-11-20T07:55:13.473Z",
+        "age": 46,
+        "year": "2046年 · 推估 · Daan Smit · 1年≈12秒",
+        "title": "重大抉择",
+        "body": "要养宠物吗？\n\nEva已经连续好几天吵着要养小狗。\n\nEva 10岁\n\n在比利时，估计约有45%的家庭养狗或猫（根据APPA、FEDIAF、KB、GfK调查推算的大略数值）\n取名字\n1\n养一只狗\n一年约6,874元 · 相伴10至15年\n2\n养一只猫\n一年约4,583元 · 相伴12至18年\n3–6\n养一只小动物\n每年约1,375元~2,291元\n鱼\n可相伴4~9年\n仓鼠\n可相伴2~3年\n鹦鹉\n可相伴6~12年\n兔子\n可相伴8~12年\n7\n现在还不是时候\n从现在起把抉择交给自动",
+        "question": "",
+        "options": [
+          {
+            "k": "dog",
+            "label": "养一只狗",
+            "sub": ""
+          },
+          {
+            "k": "cat",
+            "label": "养一只猫",
+            "sub": ""
+          },
+          {
+            "k": "pk_f",
+            "label": "鱼",
+            "sub": "每年约1,833元 · 可相伴4~9年"
+          },
+          {
+            "k": "pk_h",
+            "label": "仓鼠",
+            "sub": "每年约1,375元 · 可相伴2~3年"
+          },
+          {
+            "k": "pk_b",
+            "label": "鹦鹉",
+            "sub": "每年约1,833元 · 可相伴6~12年"
+          },
+          {
+            "k": "pk_r",
+            "label": "兔子",
+            "sub": "每年约2,291元 · 可相伴8~12年"
+          },
+          {
+            "k": "no",
+            "label": "现在还不是时候",
+            "sub": ""
+          }
+        ],
+        "optionsKnown": true,
+        "selectedK": "cat",
+        "selectedLabel": "养一只猫",
+        "selectedSub": "",
+        "auto": false,
+        "autoEvidence": "trustedClick",
+        "selectionMode": "manual",
+        "optionsSource": "dom",
+        "captureConfidence": "high",
+        "outcomeText": "",
+        "decidedAt": "2026-11-20T07:55:15.715Z",
+        "decideMs": 2242,
+        "note": "",
+        "resolved": true,
+        "minimized": false,
+        "hadModal": true,
+        "preDone": null,
+        "preAuto": 0,
+        "possibleDuplicate": false,
+        "beforeStateAt": "2026-11-20T07:55:13.476Z",
+        "afterStateAt": "2026-11-20T07:55:15.758Z",
+        "saveSelectedK": null
+      },
+      {
+        "id": "d43-mwoopa73",
+        "seq": 43,
+        "source": "live",
+        "type": "choice",
+        "lifeId": "s1795160329798",
+        "decisionId": "dreamtry",
+        "beforeStateId": "st-mwoopa76-193",
+        "afterStateId": "st-mwoopije-195",
+        "at": "2026-11-20T07:55:23.487Z",
+        "age": 47,
+        "year": "2047年 · 推估 · Daan Smit · 1年≈12秒",
+        "title": "重大抉择",
+        "body": "要挑战梦想中的工作吗？\n\n这些年打听过的工作里，有一份一直放在心上。如果录取，你会从接近新人的位置重新开始；如果没录取，就照现在的样子过日子。如果换工作，你经营的音乐教室就得转让或收掉。\n\n职缺往往是透过经历和认识的人补上的，所以要直接进入从没做过的工作并不容易。一项研究中，56%的专业人员与管理职是透过人脉找到工作的（Granovetter 1974）\n1\n挑战当音乐家\n儿时的梦想 · 录取机会：偏低 · 以中国大陆物价换算每月16,086元 · 比现在少23%\n2\n挑战当创作者·艺术家\n发挥所学主修的工作 · 做得起来的机会：相当低 · 以中国大陆物价换算每月10,221元 · 比现在少51%\n3\n挑战当教师\n发挥所学主修的工作 · 录取机会：值得一试 · 以中国大陆物价换算每月17,280元 · 比现在少18%\n4\n暂时先放在心里\n从现在起把抉择交给自动",
+        "question": "",
+        "options": [
+          {
+            "k": "d0",
+            "label": "挑战当音乐家",
+            "sub": ""
+          },
+          {
+            "k": "d1",
+            "label": "挑战当创作者·艺术家",
+            "sub": ""
+          },
+          {
+            "k": "d2",
+            "label": "挑战当教师",
+            "sub": ""
+          },
+          {
+            "k": "no",
+            "label": "暂时先放在心里",
+            "sub": ""
+          }
+        ],
+        "optionsKnown": true,
+        "selectedK": "no",
+        "selectedLabel": "暂时先放在心里",
+        "selectedSub": "",
+        "auto": false,
+        "autoEvidence": "trustedClick",
+        "selectionMode": "manual",
+        "optionsSource": "dom+hook",
+        "captureConfidence": "high",
+        "outcomeText": "抉择：暂时先放在心里",
+        "decidedAt": "2026-11-20T07:55:34.260Z",
+        "decideMs": 10773,
+        "note": "",
+        "resolved": true,
+        "minimized": false,
+        "hadModal": true,
+        "preDone": null,
+        "preAuto": 0,
+        "possibleDuplicate": false,
+        "beforeStateAt": "2026-11-20T07:55:23.490Z",
+        "afterStateAt": "2026-11-20T07:55:34.298Z",
+        "hookId": "hc-mwoopiii-43",
+        "saveSelectedK": null
+      },
+      {
+        "id": "d44-mwooplbt",
+        "seq": 44,
+        "source": "live",
+        "type": "choice",
+        "lifeId": "s1795160329798",
+        "decisionId": "kidsick",
+        "beforeStateId": "st-mwooplbw-196",
+        "afterStateId": "st-mwoopmvd-198",
+        "at": "2026-11-20T07:55:37.913Z",
+        "age": 47,
+        "year": "2047年 · 推估 · Daan Smit · 1年≈12秒",
+        "title": "重大抉择",
+        "body": "Eva病得很重\n\n11岁的Eva说肚子痛，痛得动不了。去大医院的话，自付额约8,588元（以中国大陆物价计）。你的存款有23,135元。\n\n5岁以下儿童的死亡，有很大一部分是由肺炎、腹泻、疟疾这类可以治疗的疾病造成的（WHO）\n1\n去大医院\n约8,588元\n2\n在家照顾，观察情况\n省钱但有风险\n从现在起把抉择交给自动",
+        "question": "",
+        "options": [
+          {
+            "k": "hospital",
+            "label": "去大医院",
+            "sub": ""
+          },
+          {
+            "k": "home",
+            "label": "在家照顾，观察情况",
+            "sub": ""
+          }
+        ],
+        "optionsKnown": true,
+        "selectedK": "hospital",
+        "selectedLabel": "去大医院",
+        "selectedSub": "",
+        "auto": false,
+        "autoEvidence": "trustedClick",
+        "selectionMode": "manual",
+        "optionsSource": "dom+hook",
+        "captureConfidence": "high",
+        "outcomeText": "抉择：去大医院",
+        "decidedAt": "2026-11-20T07:55:39.851Z",
+        "decideMs": 1938,
+        "note": "",
+        "resolved": true,
+        "minimized": false,
+        "hadModal": true,
+        "preDone": null,
+        "preAuto": 0,
+        "possibleDuplicate": false,
+        "beforeStateAt": "2026-11-20T07:55:37.916Z",
+        "afterStateAt": "2026-11-20T07:55:39.913Z",
+        "hookId": "hc-mwoopmtr-44",
+        "saveSelectedK": null
+      },
+      {
+        "id": "d45-mwooqfsq",
+        "seq": 45,
+        "source": "live",
+        "type": "choice",
+        "lifeId": "s1795160329798",
+        "decisionId": "gamble",
+        "beforeStateId": "st-mwooqfst-202",
+        "afterStateId": "st-mwooqh1p-204",
+        "at": "2026-11-20T07:56:17.402Z",
+        "age": 49,
+        "year": "2049年 · 推估 · Daan Smit · 1年≈12秒",
+        "title": "重大抉择",
+        "body": "要试试手气吗？\n\n朋友传来连结，叫你用手机试试运动赌博。朋友说自己上周赢了一个月的薪水。\n\n全世界估计约有8,000万名成人有赌博障碍（The Lancet Public Health 2024）\n1\n不这么做\n2\n试一次看看\n可能赢，也可能输 · 可能会陷进去\n从现在起把抉择交给自动",
+        "question": "",
+        "options": [
+          {
+            "k": "no",
+            "label": "不这么做",
+            "sub": ""
+          },
+          {
+            "k": "try",
+            "label": "试一次看看",
+            "sub": ""
+          }
+        ],
+        "optionsKnown": true,
+        "selectedK": "try",
+        "selectedLabel": "试一次看看",
+        "selectedSub": "",
+        "auto": false,
+        "autoEvidence": "trustedClick",
+        "selectionMode": "manual",
+        "optionsSource": "dom+hook",
+        "captureConfidence": "high",
+        "outcomeText": "抉择：试一次看看",
+        "decidedAt": "2026-11-20T07:56:18.988Z",
+        "decideMs": 1586,
+        "note": "",
+        "resolved": true,
+        "minimized": false,
+        "hadModal": true,
+        "preDone": null,
+        "preAuto": 0,
+        "possibleDuplicate": false,
+        "beforeStateAt": "2026-11-20T07:56:17.405Z",
+        "afterStateAt": "2026-11-20T07:56:19.021Z",
+        "hookId": "hc-mwooqh0w-45",
+        "saveSelectedK": null
+      },
+      {
+        "id": "d46-mwooqqwu",
+        "seq": 46,
+        "source": "live",
+        "type": "choice",
+        "lifeId": "s1795160329798",
+        "decisionId": "reflect",
+        "beforeStateId": "st-mwooqqwx-206",
+        "afterStateId": "st-mwooqulj-208",
+        "at": "2026-11-20T07:56:31.806Z",
+        "age": 50,
+        "year": "2050年 · 推估 · Daan Smit · 1年≈12秒",
+        "title": "暂停片刻",
+        "body": "Daan，50岁\n\n同一年在比利时出生的人当中，有97%能活到五十岁。如果出生在中国，会是93%。\n\n同一秒出生的人们——Lyudmila（俄罗斯）：销售员 · 已婚 · 2个孩子 · 陈丹（中国）：退休 · 已婚 · 1个孩子 · Brenda（美国）：营造业老板 · 已婚 · 1个孩子 · Geeta（印度）：41岁离世（结核病）\n\n如果Daan是你的邻居，你想和对方聊些什么？\n\n1\n写下来，继续生活\n写下的文字会留在这一生的纪录里\n2\n放在心里，继续生活\n从现在起把抉择交给自动\n以后不再显示这个视窗",
+        "question": "如果Daan是你的邻居，你想和对方聊些什么？",
+        "options": [
+          {
+            "k": "write",
+            "label": "写下来，继续生活",
+            "sub": ""
+          },
+          {
+            "k": "skip",
+            "label": "放在心里，继续生活",
+            "sub": ""
+          }
+        ],
+        "optionsKnown": true,
+        "selectedK": "skip",
+        "selectedLabel": "放在心里，继续生活",
+        "selectedSub": "",
+        "auto": false,
+        "autoEvidence": "trustedClick",
+        "selectionMode": "manual",
+        "optionsSource": "dom+hook",
+        "captureConfidence": "high",
+        "outcomeText": "",
+        "decidedAt": "2026-11-20T07:56:36.556Z",
+        "decideMs": 4750,
+        "note": "",
+        "resolved": true,
+        "minimized": false,
+        "hadModal": true,
+        "preDone": null,
+        "preAuto": 0,
+        "possibleDuplicate": false,
+        "beforeStateAt": "2026-11-20T07:56:31.809Z",
+        "afterStateAt": "2026-11-20T07:56:36.583Z",
+        "hookId": "hc-mwooqukv-46",
+        "saveSelectedK": null
+      },
+      {
+        "id": "d47-mwooqwtr",
+        "seq": 47,
+        "source": "live",
+        "type": "choice",
+        "lifeId": "s1795160329798",
+        "decisionId": "gambquit",
+        "beforeStateId": "st-mwooqwtv-209",
+        "afterStateId": "st-mwooqzxy-211",
+        "at": "2026-11-20T07:56:39.471Z",
+        "age": 50,
+        "year": "2050年 · 推估 · Daan Smit · 1年≈12秒",
+        "title": "重大抉择",
+        "body": "要戒赌吗？\n\n开始赌博已经1年。比起输掉的钱，瞒着家人的事更加沉重。\n\n赌博问题可以透过咨商和治疗而康复 · 求助：在中国大陆可拨打全国统一心理援助热线 12356；其他地方可上 findahelpline.com 查询\n1\n向家人坦白，接受咨商\n虽然难以启齿，但这是康复的开始\n2\n这次赢了就收手\n从现在起把抉择交给自动",
+        "question": "",
+        "options": [
+          {
+            "k": "help",
+            "label": "向家人坦白，接受咨商",
+            "sub": ""
+          },
+          {
+            "k": "later",
+            "label": "这次赢了就收手",
+            "sub": ""
+          }
+        ],
+        "optionsKnown": true,
+        "selectedK": "help",
+        "selectedLabel": "向家人坦白，接受咨商",
+        "selectedSub": "",
+        "auto": false,
+        "autoEvidence": "trustedClick",
+        "selectionMode": "manual",
+        "optionsSource": "dom+hook",
+        "captureConfidence": "high",
+        "outcomeText": "抉择：向家人坦白，接受咨商",
+        "decidedAt": "2026-11-20T07:56:43.468Z",
+        "decideMs": 3998,
+        "note": "",
+        "resolved": true,
+        "minimized": false,
+        "hadModal": true,
+        "preDone": null,
+        "preAuto": 0,
+        "possibleDuplicate": false,
+        "beforeStateAt": "2026-11-20T07:56:39.475Z",
+        "afterStateAt": "2026-11-20T07:56:43.510Z",
+        "hookId": "hc-mwooqzwz-47",
+        "saveSelectedK": null
+      },
+      {
+        "id": "d48-mwoorgsp",
+        "seq": 48,
+        "source": "live",
+        "type": "choice",
+        "lifeId": "s1795160329798",
+        "decisionId": "loan",
+        "beforeStateId": "st-mwoorgsr-214",
+        "afterStateId": "st-mwoorj1y-216",
+        "at": "2026-11-20T07:57:05.353Z",
+        "age": 52,
+        "year": "2052年 · 推估 · Daan Smit · 1年≈12秒",
+        "title": "重大抉择",
+        "body": "债务越滚越大\n\n负债12.5万元（以中国大陆物价计）。\n\n1\n向家人求助\n人际关系↓\n2\n靠自己的收入慢慢还\n债务和利息照旧\n3\n办理转贷\n利息负担\n4\n卖掉汽车\n资产↓\n从现在起把抉择交给自动",
+        "question": "",
+        "options": [
+          {
+            "k": "family",
+            "label": "向家人求助",
+            "sub": ""
+          },
+          {
+            "k": "self",
+            "label": "靠自己的收入慢慢还",
+            "sub": ""
+          },
+          {
+            "k": "lender",
+            "label": "办理转贷",
+            "sub": ""
+          },
+          {
+            "k": "sellv",
+            "label": "卖掉汽车",
+            "sub": ""
+          }
+        ],
+        "optionsKnown": true,
+        "selectedK": "family",
+        "selectedLabel": "向家人求助",
+        "selectedSub": "",
+        "auto": false,
+        "autoEvidence": "trustedClick",
+        "selectionMode": "manual",
+        "optionsSource": "dom",
+        "captureConfidence": "high",
+        "outcomeText": "",
+        "decidedAt": "2026-11-20T07:57:08.244Z",
+        "decideMs": 2891,
+        "note": "",
+        "resolved": true,
+        "minimized": false,
+        "hadModal": true,
+        "preDone": null,
+        "preAuto": 0,
+        "possibleDuplicate": false,
+        "beforeStateAt": "2026-11-20T07:57:05.355Z",
+        "afterStateAt": "2026-11-20T07:57:08.278Z",
+        "saveSelectedK": null
+      },
+      {
+        "id": "d49-mwoors5y",
+        "seq": 49,
+        "source": "live",
+        "type": "choice",
+        "lifeId": "s1795160329798",
+        "decisionId": "gambquit",
+        "beforeStateId": "st-mwoors60-218",
+        "afterStateId": "st-mwooruzu-220",
+        "at": "2026-11-20T07:57:20.086Z",
+        "age": 53,
+        "year": "2053年 · 推估 · Daan Smit · 1年≈12秒",
+        "title": "重大抉择",
+        "body": "要戒赌吗？\n\n开始赌博已经4年。比起输掉的钱，瞒着家人的事更加沉重。\n\n赌博问题可以透过咨商和治疗而康复 · 求助：在中国大陆可拨打全国统一心理援助热线 12356；其他地方可上 findahelpline.com 查询\n1\n向家人坦白，接受咨商\n虽然难以启齿，但这是康复的开始\n2\n这次赢了就收手\n从现在起把抉择交给自动",
+        "question": "",
+        "options": [
+          {
+            "k": "help",
+            "label": "向家人坦白，接受咨商",
+            "sub": ""
+          },
+          {
+            "k": "later",
+            "label": "这次赢了就收手",
+            "sub": ""
+          }
+        ],
+        "optionsKnown": true,
+        "selectedK": "help",
+        "selectedLabel": "向家人坦白，接受咨商",
+        "selectedSub": "",
+        "auto": false,
+        "autoEvidence": "trustedClick",
+        "selectionMode": "manual",
+        "optionsSource": "dom",
+        "captureConfidence": "high",
+        "outcomeText": "",
+        "decidedAt": "2026-11-20T07:57:23.716Z",
+        "decideMs": 3630,
+        "note": "",
+        "resolved": true,
+        "minimized": false,
+        "hadModal": true,
+        "preDone": null,
+        "preAuto": 0,
+        "possibleDuplicate": false,
+        "beforeStateAt": "2026-11-20T07:57:20.088Z",
+        "afterStateAt": "2026-11-20T07:57:23.754Z",
+        "saveSelectedK": null
+      },
+      {
+        "id": "d50-mwoos4in",
+        "seq": 50,
+        "source": "live",
+        "type": "choice",
+        "lifeId": "s1795160329798",
+        "decisionId": "stranger",
+        "beforeStateId": "st-mwoos4ir-222",
+        "afterStateId": "st-mwoos5rr-224",
+        "at": "2026-11-20T07:57:36.095Z",
+        "age": 54,
+        "year": "2054年 · 推估 · Daan Smit · 1年≈12秒",
+        "title": "重大抉择",
+        "body": "倒在路边的人\n\n路上有个陌生人倒在地上。大家都匆匆走过。\n\n1\n送去医院\n要花一点时间和钱\n2\n总会有人帮忙吧，走过去\n从现在起把抉择交给自动",
+        "question": "",
+        "options": [
+          {
+            "k": "help",
+            "label": "送去医院",
+            "sub": ""
+          },
+          {
+            "k": "pass",
+            "label": "总会有人帮忙吧，走过去",
+            "sub": ""
+          }
+        ],
+        "optionsKnown": true,
+        "selectedK": "help",
+        "selectedLabel": "送去医院",
+        "selectedSub": "",
+        "auto": false,
+        "autoEvidence": "trustedClick",
+        "selectionMode": "manual",
+        "optionsSource": "dom+hook",
+        "captureConfidence": "high",
+        "outcomeText": "抉择：送去医院",
+        "decidedAt": "2026-11-20T07:57:37.684Z",
+        "decideMs": 1589,
+        "note": "",
+        "resolved": true,
+        "minimized": false,
+        "hadModal": true,
+        "preDone": null,
+        "preAuto": 0,
+        "possibleDuplicate": false,
+        "beforeStateAt": "2026-11-20T07:57:36.099Z",
+        "afterStateAt": "2026-11-20T07:57:37.719Z",
+        "hookId": "hc-mwoos5qw-50",
+        "saveSelectedK": null
+      },
+      {
+        "id": "d51-mwootske",
+        "seq": 51,
+        "source": "live",
+        "type": "choice",
+        "lifeId": "s1795160329798",
+        "decisionId": "disaster",
+        "beforeStateId": "st-mwootskh-230",
+        "afterStateId": "st-mwootvor-232",
+        "at": "2026-11-20T07:58:53.918Z",
+        "age": 56,
+        "year": "2056年 · 推估 · Daan Smit · 1年≈12秒",
+        "title": "重大抉择",
+        "body": "洪水来袭\n\n家园和社区都受到严重损害。\n\n2023年，全世界约有2,640万人因自然灾害在本国境内流离失所（IDMC 2024）\n1\n借钱重建\n财产↓ 迅速复原\n2\n等待救援\n健康·幸福↓\n从现在起把抉择交给自动",
+        "question": "",
+        "options": [
+          {
+            "k": "rebuild",
+            "label": "借钱重建",
+            "sub": ""
+          },
+          {
+            "k": "wait",
+            "label": "等待救援",
+            "sub": ""
+          }
+        ],
+        "optionsKnown": true,
+        "selectedK": "rebuild",
+        "selectedLabel": "借钱重建",
+        "selectedSub": "",
+        "auto": false,
+        "autoEvidence": "trustedClick",
+        "selectionMode": "manual",
+        "optionsSource": "dom",
+        "captureConfidence": "high",
+        "outcomeText": "",
+        "decidedAt": "2026-11-20T07:58:57.925Z",
+        "decideMs": 4007,
+        "note": "",
+        "resolved": true,
+        "minimized": false,
+        "hadModal": true,
+        "preDone": null,
+        "preAuto": 0,
+        "possibleDuplicate": false,
+        "beforeStateAt": "2026-11-20T07:58:53.921Z",
+        "afterStateAt": "2026-11-20T07:58:57.963Z",
+        "saveSelectedK": null
+      },
+      {
+        "id": "d52-mwoou5nm",
+        "seq": 52,
+        "source": "live",
+        "type": "choice",
+        "lifeId": "s1795160329798",
+        "decisionId": "lotto",
+        "beforeStateId": "st-mwoou5no-234",
+        "afterStateId": "st-mwoou90g-236",
+        "at": "2026-11-20T07:59:10.882Z",
+        "age": 57,
+        "year": "2057年 · 推估 · Daan Smit · 1年≈12秒",
+        "title": "重大抉择",
+        "body": "要买彩券吗？\n\n店里收银台旁边在卖彩券。大家都说这周的头奖奖金累积得很高。\n\n彩券通常只把销售额的一半左右作为奖金发还。大多数购买的人每年都会输掉所花金额的一半以上\n1\n每周买一点\n一年约2,113元 · 大部分会输掉\n2\n只买这一次\n3\n不买\n从现在起把抉择交给自动",
+        "question": "",
+        "options": [
+          {
+            "k": "weekly",
+            "label": "每周买一点",
+            "sub": ""
+          },
+          {
+            "k": "once",
+            "label": "只买这一次",
+            "sub": ""
+          },
+          {
+            "k": "no",
+            "label": "不买",
+            "sub": ""
+          }
+        ],
+        "optionsKnown": true,
+        "selectedK": "no",
+        "selectedLabel": "不买",
+        "selectedSub": "",
+        "auto": false,
+        "autoEvidence": "trustedClick",
+        "selectionMode": "manual",
+        "optionsSource": "dom+hook",
+        "captureConfidence": "high",
+        "outcomeText": "",
+        "decidedAt": "2026-11-20T07:59:15.191Z",
+        "decideMs": 4309,
+        "note": "",
+        "resolved": true,
+        "minimized": false,
+        "hadModal": true,
+        "preDone": null,
+        "preAuto": 0,
+        "possibleDuplicate": false,
+        "beforeStateAt": "2026-11-20T07:59:10.884Z",
+        "afterStateAt": "2026-11-20T07:59:15.232Z",
+        "hookId": "hc-mwoou8zg-52",
+        "saveSelectedK": null
+      },
+      {
+        "id": "d53-mwoouikx",
+        "seq": 53,
+        "source": "live",
+        "type": "choice",
+        "lifeId": "s1795160329798",
+        "decisionId": "growup",
+        "beforeStateId": "st-mwoouil0-238",
+        "afterStateId": "st-mwooul7t-240",
+        "at": "2026-11-20T07:59:27.633Z",
+        "age": 58,
+        "year": "2058年 · 推估 · Daan Smit · 1年≈12秒",
+        "title": "重大抉择",
+        "body": "要扩大事业吗？\n\n你以音乐教室负责人的身分工作了31年，累积了熟客和本钱。投入约18.2万元，就可以成为有多名老师的才艺班负责人。万一不顺利，投入的钱就会赔掉。\n\n开发中国家的小企业中，会增加人手的不到四分之一，能成长到10人以上的只有1%左右（Mead & Liedholm 1998）\n1\n扩大经营\n收入↑ · 可能赔掉投入的钱\n2\n维持现在的规模\n从现在起把抉择交给自动",
+        "question": "",
+        "options": [
+          {
+            "k": "up",
+            "label": "扩大经营",
+            "sub": ""
+          },
+          {
+            "k": "no",
+            "label": "维持现在的规模",
+            "sub": ""
+          }
+        ],
+        "optionsKnown": true,
+        "selectedK": "up",
+        "selectedLabel": "扩大经营",
+        "selectedSub": "",
+        "auto": false,
+        "autoEvidence": "trustedClick",
+        "selectionMode": "manual",
+        "optionsSource": "dom+hook",
+        "captureConfidence": "high",
+        "outcomeText": "抉择：扩大经营",
+        "decidedAt": "2026-11-20T07:59:31.015Z",
+        "decideMs": 3382,
+        "note": "",
+        "resolved": true,
+        "minimized": false,
+        "hadModal": true,
+        "preDone": null,
+        "preAuto": 0,
+        "possibleDuplicate": false,
+        "beforeStateAt": "2026-11-20T07:59:27.636Z",
+        "afterStateAt": "2026-11-20T07:59:31.049Z",
+        "hookId": "hc-mwooul70-53",
+        "saveSelectedK": null
+      },
+      {
+        "id": "d54-mwoouul0",
+        "seq": 54,
+        "source": "live",
+        "type": "choice",
+        "lifeId": "s1795160329798",
+        "decisionId": "diag",
+        "beforeStateId": "st-mwoouul2-242",
+        "afterStateId": "st-mwoouz54-244",
+        "at": "2026-11-20T07:59:43.188Z",
+        "age": 59,
+        "year": "2059年 · 推估 · Daan Smit · 1年≈12秒",
+        "title": "重大抉择",
+        "body": "你被诊断出高血压\n\n需要持续服药和控制。自付的药费一年约765元（以中国大陆物价计）。\n\n全球30～79岁的成年人约有13亿人患有高血压，其中将近一半不知道自己有高血压（WHO 2023）\n1\n持续接受治疗\n维持健康，需要花钱\n2\n吃药，同时改变饮食和运动习惯\n需要花钱 · 风险 ↓\n3\n应该没事吧，先撑着\n省钱但有风险\n从现在起把抉择交给自动",
+        "question": "",
+        "options": [
+          {
+            "k": "treat",
+            "label": "持续接受治疗",
+            "sub": ""
+          },
+          {
+            "k": "life",
+            "label": "吃药，同时改变饮食和运动习惯",
+            "sub": ""
+          },
+          {
+            "k": "ignore",
+            "label": "应该没事吧，先撑着",
+            "sub": ""
+          }
+        ],
+        "optionsKnown": true,
+        "selectedK": "life",
+        "selectedLabel": "吃药，同时改变饮食和运动习惯",
+        "selectedSub": "",
+        "auto": false,
+        "autoEvidence": "trustedClick",
+        "selectionMode": "manual",
+        "optionsSource": "dom+hook",
+        "captureConfidence": "high",
+        "outcomeText": "抉择：吃药，同时改变饮食和运动习惯",
+        "decidedAt": "2026-11-20T07:59:49.038Z",
+        "decideMs": 5850,
+        "note": "",
+        "resolved": true,
+        "minimized": false,
+        "hadModal": true,
+        "preDone": null,
+        "preAuto": 0,
+        "possibleDuplicate": false,
+        "beforeStateAt": "2026-11-20T07:59:43.190Z",
+        "afterStateAt": "2026-11-20T07:59:49.096Z",
+        "hookId": "hc-mwoouz3n-54",
+        "saveSelectedK": "life"
+      },
+      {
+        "id": "d55-mwooxwkl",
+        "seq": 55,
+        "source": "live",
+        "type": "choice",
+        "lifeId": "s1795160329798",
+        "decisionId": "petq",
+        "beforeStateId": "st-mwooxwkp-253",
+        "afterStateId": "st-mwooxywp-255",
+        "at": "2026-11-20T08:02:05.733Z",
+        "age": 63,
+        "year": "2063年 · 推估 · Daan Smit · 1年≈12秒",
+        "title": "重大抉择",
+        "body": "要养宠物吗？\n\n常在附近遇到的那只流浪猫，一直让你放心不下。\n\n在比利时，估计约有45%的家庭养狗或猫（根据APPA、FEDIAF、KB、GfK调查推算的大略数值）\n取名字\n1\n养一只狗\n一年约10,097元 · 相伴10至15年\n2\n养一只猫\n一年约6,731元 · 相伴12至18年\n3–6\n养一只小动物\n每年约2,019元~3,366元\n鱼\n可相伴4~9年\n仓鼠\n可相伴2~3年\n鹦鹉\n可相伴6~12年\n兔子\n可相伴8~12年\n7\n现在还不是时候\n从现在起把抉择交给自动",
+        "question": "",
+        "options": [
+          {
+            "k": "dog",
+            "label": "养一只狗",
+            "sub": ""
+          },
+          {
+            "k": "cat",
+            "label": "养一只猫",
+            "sub": ""
+          },
+          {
+            "k": "pk_f",
+            "label": "鱼",
+            "sub": "每年约2,693元 · 可相伴4~9年"
+          },
+          {
+            "k": "pk_h",
+            "label": "仓鼠",
+            "sub": "每年约2,019元 · 可相伴2~3年"
+          },
+          {
+            "k": "pk_b",
+            "label": "鹦鹉",
+            "sub": "每年约2,693元 · 可相伴6~12年"
+          },
+          {
+            "k": "pk_r",
+            "label": "兔子",
+            "sub": "每年约3,366元 · 可相伴8~12年"
+          },
+          {
+            "k": "no",
+            "label": "现在还不是时候",
+            "sub": ""
+          }
+        ],
+        "optionsKnown": true,
+        "selectedK": "cat",
+        "selectedLabel": "养一只猫",
+        "selectedSub": "",
+        "auto": false,
+        "autoEvidence": "trustedClick",
+        "selectionMode": "manual",
+        "optionsSource": "dom",
+        "captureConfidence": "high",
+        "outcomeText": "",
+        "decidedAt": "2026-11-20T08:02:08.728Z",
+        "decideMs": 2994,
+        "note": "",
+        "resolved": true,
+        "minimized": false,
+        "hadModal": true,
+        "preDone": null,
+        "preAuto": 0,
+        "possibleDuplicate": false,
+        "beforeStateAt": "2026-11-20T08:02:05.737Z",
+        "afterStateAt": "2026-11-20T08:02:08.761Z",
+        "saveSelectedK": null
+      },
+      {
+        "id": "d56-mwooygww",
+        "seq": 56,
+        "source": "live",
+        "type": "choice",
+        "lifeId": "s1795160329798",
+        "decisionId": "bizop",
+        "beforeStateId": "st-mwooygx2-258",
+        "afterStateId": "st-mwooyjc1-260",
+        "at": "2026-11-20T08:02:32.096Z",
+        "age": 65,
+        "year": "2065年 · 推估 · Daan Smit · 1年≈12秒",
+        "title": "重大抉择",
+        "body": "上门的人变少的一年\n\n这几个月来，上门的人变少了。照这样下去，很难撑得住。\n\n1\n降价撑下去\n收入减少，但留住上门的人\n2\n缩小规模撑下去\n少接工作、压低开销 · 收入减少，但关门的风险也降低\n3\n贷款撑过去\n负债约10.1万元\n4\n趁还不太晚收掉\n保住剩下的钱\n从现在起把抉择交给自动",
+        "question": "",
+        "options": [
+          {
+            "k": "price",
+            "label": "降价撑下去",
+            "sub": ""
+          },
+          {
+            "k": "shrink",
+            "label": "缩小规模撑下去",
+            "sub": ""
+          },
+          {
+            "k": "borrow",
+            "label": "贷款撑过去",
+            "sub": ""
+          },
+          {
+            "k": "close",
+            "label": "趁还不太晚收掉",
+            "sub": ""
+          }
+        ],
+        "optionsKnown": true,
+        "selectedK": "price",
+        "selectedLabel": "降价撑下去",
+        "selectedSub": "",
+        "auto": false,
+        "autoEvidence": "trustedClick",
+        "selectionMode": "manual",
+        "optionsSource": "dom",
+        "captureConfidence": "high",
+        "outcomeText": "",
+        "decidedAt": "2026-11-20T08:02:35.200Z",
+        "decideMs": 3104,
+        "note": "",
+        "resolved": true,
+        "minimized": false,
+        "hadModal": true,
+        "preDone": null,
+        "preAuto": 0,
+        "possibleDuplicate": false,
+        "beforeStateAt": "2026-11-20T08:02:32.102Z",
+        "afterStateAt": "2026-11-20T08:02:35.233Z",
+        "saveSelectedK": null
+      },
+      {
+        "id": "d57-mwoozxuf",
+        "seq": 57,
+        "source": "live",
+        "type": "choice",
+        "lifeId": "s1795160329798",
+        "decisionId": "nbrkid",
+        "beforeStateId": "st-mwoozxuh-267",
+        "afterStateId": "st-mwop0061-269",
+        "at": "2026-11-20T08:03:40.695Z",
+        "age": 69,
+        "year": "2069年 · 推估 · Daan Smit · 1年≈6秒",
+        "title": "重大抉择",
+        "body": "隔壁的孩子\n\n你常在深夜听到隔壁孩子的哭声。今天在微凉的傍晚，那孩子独自站在门外。\n\n儿童虐待大多发生在家中，出自照顾孩子的大人之手。身边的大人察觉并说出来，是保护孩子的第一步（WHO）\n1\n通知儿童保护机构\n2\n和孩子说说话，留意情况\n3\n那是别人的家务事，装作不知道\n从现在起把抉择交给自动",
+        "question": "",
+        "options": [
+          {
+            "k": "report",
+            "label": "通知儿童保护机构",
+            "sub": ""
+          },
+          {
+            "k": "talk",
+            "label": "和孩子说说话，留意情况",
+            "sub": ""
+          },
+          {
+            "k": "pass",
+            "label": "那是别人的家务事，装作不知道",
+            "sub": ""
+          }
+        ],
+        "optionsKnown": true,
+        "selectedK": "report",
+        "selectedLabel": "通知儿童保护机构",
+        "selectedSub": "",
+        "auto": false,
+        "autoEvidence": "trustedClick",
+        "selectionMode": "manual",
+        "optionsSource": "dom+hook",
+        "captureConfidence": "high",
+        "outcomeText": "抉择：通知儿童保护机构",
+        "decidedAt": "2026-11-20T08:03:43.657Z",
+        "decideMs": 2962,
+        "note": "",
+        "resolved": true,
+        "minimized": false,
+        "hadModal": true,
+        "preDone": null,
+        "preAuto": 0,
+        "possibleDuplicate": false,
+        "beforeStateAt": "2026-11-20T08:03:40.697Z",
+        "afterStateAt": "2026-11-20T08:03:43.705Z",
+        "hookId": "hc-mwop004u-57",
+        "saveSelectedK": null
+      },
+      {
+        "id": "d58-mwop04zq",
+        "seq": 58,
+        "source": "live",
+        "type": "choice",
+        "lifeId": "s1795160329798",
+        "decisionId": "reflect",
+        "beforeStateId": "st-mwop04zt-271",
+        "afterStateId": "st-mwop06h1-273",
+        "at": "2026-11-20T08:03:49.958Z",
+        "age": 70,
+        "year": "2070年 · 推估 · Daan Smit · 1年≈6秒",
+        "title": "暂停片刻",
+        "body": "Daan，70岁\n\n同一年在比利时出生的人当中，只有89%能活到七十岁。在中国则是82%。\n\n同一秒出生的人们——Lyudmila（俄罗斯）：62岁离世（肝癌） · 陈丹（中国）：退休 · 已婚 · 1个孩子 · Brenda（美国）：农场经营者 · 1个孩子 · Geeta（印度）：41岁离世（结核病）\n\n在只有一次的人生里，Daan最珍惜的是什么呢？\n\n1\n写下来，继续生活\n写下的文字会留在这一生的纪录里\n2\n放在心里，继续生活\n从现在起把抉择交给自动\n以后不再显示这个视窗",
+        "question": "在只有一次的人生里，Daan最珍惜的是什么呢？",
+        "options": [
+          {
+            "k": "write",
+            "label": "写下来，继续生活",
+            "sub": ""
+          },
+          {
+            "k": "skip",
+            "label": "放在心里，继续生活",
+            "sub": ""
+          }
+        ],
+        "optionsKnown": true,
+        "selectedK": "skip",
+        "selectedLabel": "放在心里，继续生活",
+        "selectedSub": "",
+        "auto": false,
+        "autoEvidence": "trustedClick",
+        "selectionMode": "manual",
+        "optionsSource": "dom+hook",
+        "captureConfidence": "high",
+        "outcomeText": "",
+        "decidedAt": "2026-11-20T08:03:51.842Z",
+        "decideMs": 1884,
+        "note": "",
+        "resolved": true,
+        "minimized": false,
+        "hadModal": true,
+        "preDone": null,
+        "preAuto": 0,
+        "possibleDuplicate": false,
+        "beforeStateAt": "2026-11-20T08:03:49.961Z",
+        "afterStateAt": "2026-11-20T08:03:51.877Z",
+        "hookId": "hc-mwop06g8-58",
+        "saveSelectedK": null
+      },
+      {
+        "id": "d59-mwop0b7n",
+        "seq": 59,
+        "source": "live",
+        "type": "choice",
+        "lifeId": "s1795160329798",
+        "decisionId": "retire",
+        "beforeStateId": "st-mwop0b7p-275",
+        "afterStateId": "st-mwop0jd2-277",
+        "at": "2026-11-20T08:03:58.019Z",
+        "age": 70,
+        "year": "2070年 · 推估 · Daan Smit · 1年≈6秒",
+        "title": "重大抉择",
+        "body": "要退休吗？\n\n退休的话，每年可领US$19,863 PPP的退休金（以中国大陆物价计每月5,793元）。靠退休金省着用，生活费还过得去。\n\n高所得国家的长者大多领有公共年金（ILO）\n1\n退休\n闲暇↑ 收入↓ · 音乐教室转让或收掉\n2\n减少工作，改做兼职\n收入约减半 · 身体比较轻松\n3\n继续工作\n维持收入\n从现在起把抉择交给自动",
+        "question": "",
+        "options": [
+          {
+            "k": "retire",
+            "label": "退休",
+            "sub": ""
+          },
+          {
+            "k": "less",
+            "label": "减少工作，改做兼职",
+            "sub": ""
+          },
+          {
+            "k": "work",
+            "label": "继续工作",
+            "sub": ""
+          }
+        ],
+        "optionsKnown": true,
+        "selectedK": "work",
+        "selectedLabel": "继续工作",
+        "selectedSub": "",
+        "auto": false,
+        "autoEvidence": "trustedClick",
+        "selectionMode": "manual",
+        "optionsSource": "dom+hook",
+        "captureConfidence": "high",
+        "outcomeText": "抉择：退休",
+        "decidedAt": "2026-11-20T08:04:08.546Z",
+        "decideMs": 10527,
+        "note": "",
+        "resolved": true,
+        "minimized": false,
+        "hadModal": true,
+        "preDone": null,
+        "preAuto": 0,
+        "possibleDuplicate": false,
+        "beforeStateAt": "2026-11-20T08:03:58.021Z",
+        "afterStateAt": "2026-11-20T08:04:08.582Z",
+        "hookId": "hc-mwop0jc7-59",
+        "saveSelectedK": "work"
+      },
+      {
+        "id": "d60-mwop0mot",
+        "seq": 60,
+        "source": "live",
+        "type": "choice",
+        "lifeId": "s1795160329798",
+        "decisionId": "kidwed",
+        "beforeStateId": "st-mwop0mox-279",
+        "afterStateId": "st-mwop0uig-281",
+        "at": "2026-11-20T08:04:12.893Z",
+        "age": 71,
+        "year": "2071年 · 推估 · Daan Smit · 1年≈6秒",
+        "title": "重大抉择",
+        "body": "Eva要结婚了\n\n35岁的Eva带着想共度一生的人回家了。\n\n婚礼和成家大约要花79,861元（以中国大陆物价计）。你的存款有25,236元。\n1\n大方资助婚礼费用\n约79,861元\n2\n量力而为，资助一点\n约19,965元\n3\n只送上祝福\n从现在起把抉择交给自动",
+        "question": "",
+        "options": [
+          {
+            "k": "help",
+            "label": "大方资助婚礼费用",
+            "sub": ""
+          },
+          {
+            "k": "little",
+            "label": "量力而为，资助一点",
+            "sub": ""
+          },
+          {
+            "k": "none",
+            "label": "只送上祝福",
+            "sub": ""
+          }
+        ],
+        "optionsKnown": true,
+        "selectedK": "little",
+        "selectedLabel": "量力而为，资助一点",
+        "selectedSub": "",
+        "auto": false,
+        "autoEvidence": "trustedClick",
+        "selectionMode": "manual",
+        "optionsSource": "dom+hook",
+        "captureConfidence": "high",
+        "outcomeText": "抉择：量力而为，资助一点",
+        "decidedAt": "2026-11-20T08:04:22.994Z",
+        "decideMs": 10100,
+        "note": "",
+        "resolved": true,
+        "minimized": false,
+        "hadModal": true,
+        "preDone": null,
+        "preAuto": 0,
+        "possibleDuplicate": false,
+        "beforeStateAt": "2026-11-20T08:04:12.897Z",
+        "afterStateAt": "2026-11-20T08:04:23.032Z",
+        "hookId": "hc-mwop0uhk-60",
+        "saveSelectedK": "little"
+      },
+      {
+        "id": "d61-mwop1iur",
+        "seq": 61,
+        "source": "live",
+        "type": "choice",
+        "lifeId": "s1795160329798",
+        "decisionId": "retire",
+        "beforeStateId": "st-mwop1iuw-286",
+        "afterStateId": "st-mwop1mli-288",
+        "at": "2026-11-20T08:04:54.579Z",
+        "age": 73,
+        "year": "2073年 · 推估 · Daan Smit · 1年≈6秒",
+        "title": "重大抉择",
+        "body": "要退休吗？\n\n退休的话，每年可领US$17,386 PPP的退休金（以中国大陆物价计每月5,071元）。靠退休金省着用，生活费还过得去。\n\n高所得国家的长者大多领有公共年金（ILO）\n1\n退休\n闲暇↑ 收入↓ · 音乐教室转让或收掉\n2\n减少工作，改做兼职\n收入约减半 · 身体比较轻松\n3\n继续工作\n维持收入\n从现在起把抉择交给自动",
+        "question": "",
+        "options": [
+          {
+            "k": "retire",
+            "label": "退休",
+            "sub": ""
+          },
+          {
+            "k": "less",
+            "label": "减少工作，改做兼职",
+            "sub": ""
+          },
+          {
+            "k": "work",
+            "label": "继续工作",
+            "sub": ""
+          }
+        ],
+        "optionsKnown": true,
+        "selectedK": "retire",
+        "selectedLabel": "退休",
+        "selectedSub": "",
+        "auto": false,
+        "autoEvidence": "trustedClick",
+        "selectionMode": "manual",
+        "optionsSource": "dom",
+        "captureConfidence": "high",
+        "outcomeText": "",
+        "decidedAt": "2026-11-20T08:04:59.395Z",
+        "decideMs": 4816,
+        "note": "",
+        "resolved": true,
+        "minimized": false,
+        "hadModal": true,
+        "preDone": null,
+        "preAuto": 0,
+        "possibleDuplicate": false,
+        "beforeStateAt": "2026-11-20T08:04:54.584Z",
+        "afterStateAt": "2026-11-20T08:04:59.430Z",
+        "saveSelectedK": "retire"
+      },
+      {
+        "id": "d62-mwop2c9c",
+        "seq": 62,
+        "source": "live",
+        "type": "choice",
+        "lifeId": "s1795160329798",
+        "decisionId": "oldhome",
+        "beforeStateId": "st-mwop2c9g-294",
+        "afterStateId": "st-mwop2f39-296",
+        "at": "2026-11-20T08:05:32.688Z",
+        "age": 75,
+        "year": "2075年 · 推估 · Daan Smit · 1年≈6秒",
+        "title": "重大抉择",
+        "body": "年老后要住在哪里？\n\n独自度过的日子越来越长。Eva说想跟你一起住。\n\nEva 39岁\n\n在比利时，约有12%的老人和子女同住。在高所得国家，80岁以上的老人每十人中有一到两人住在安养机构（UN DESA、OECD）\n1\n和Eva一起住\n人际关系↑ 生活费↓\n2\n住进安养院\n有人照顾 · 每年约96,572元\n3\n继续住在家里\n接受居家照顾\n从现在起把抉择交给自动",
+        "question": "",
+        "options": [
+          {
+            "k": "kid",
+            "label": "和Eva一起住",
+            "sub": ""
+          },
+          {
+            "k": "care",
+            "label": "住进安养院",
+            "sub": ""
+          },
+          {
+            "k": "own",
+            "label": "继续住在家里",
+            "sub": ""
+          }
+        ],
+        "optionsKnown": true,
+        "selectedK": "kid",
+        "selectedLabel": "和Eva一起住",
+        "selectedSub": "",
+        "auto": false,
+        "autoEvidence": "trustedClick",
+        "selectionMode": "manual",
+        "optionsSource": "dom+hook",
+        "captureConfidence": "high",
+        "outcomeText": "抉择：和Eva一起住",
+        "decidedAt": "2026-11-20T08:05:36.299Z",
+        "decideMs": 3611,
+        "note": "",
+        "resolved": true,
+        "minimized": false,
+        "hadModal": true,
+        "preDone": null,
+        "preAuto": 0,
+        "possibleDuplicate": false,
+        "beforeStateAt": "2026-11-20T08:05:32.692Z",
+        "afterStateAt": "2026-11-20T08:05:36.357Z",
+        "hookId": "hc-mwop2f1s-62",
+        "saveSelectedK": null
+      },
+      {
+        "id": "d63-mwop2vid",
+        "seq": 63,
+        "source": "live",
+        "type": "choice",
+        "lifeId": "s1795160329798",
+        "decisionId": "partner",
+        "beforeStateId": "st-mwop2vig-301",
+        "afterStateId": "st-mwop2z4w-303",
+        "at": "2026-11-20T08:05:57.637Z",
+        "age": 78,
+        "year": "2078年 · 推估 · Daan Smit · 1年≈6秒",
+        "title": "重大抉择",
+        "body": "爱情再次来到\n\nKees Mulder，认识已久的79岁男性，个性安静。工作：已退休（之前是会计·金融专业人员）。对方有3个已经成年的子女（51岁、42岁、40岁）。\n\n查看更多\n▾\n在比利时，自2003年起，同性的两人也可以结婚\n1\n交往看看\n慢慢认识彼此 · 结婚以后再说\n2\n没有心动\n从现在起把抉择交给自动",
+        "question": "",
+        "options": [
+          {
+            "k": "date",
+            "label": "交往看看",
+            "sub": ""
+          },
+          {
+            "k": "no",
+            "label": "没有心动",
+            "sub": ""
+          }
+        ],
+        "optionsKnown": true,
+        "selectedK": "date",
+        "selectedLabel": "交往看看",
+        "selectedSub": "",
+        "auto": false,
+        "autoEvidence": "trustedClick",
+        "selectionMode": "manual",
+        "optionsSource": "dom",
+        "captureConfidence": "high",
+        "outcomeText": "",
+        "decidedAt": "2026-11-20T08:06:02.284Z",
+        "decideMs": 4647,
+        "note": "",
+        "resolved": true,
+        "minimized": false,
+        "hadModal": true,
+        "preDone": null,
+        "preAuto": 0,
+        "possibleDuplicate": false,
+        "beforeStateAt": "2026-11-20T08:05:57.640Z",
+        "afterStateAt": "2026-11-20T08:06:02.336Z",
+        "saveSelectedK": null
+      }
+    ],
+    "focusPicks": [
+      {
+        "at": "2026-11-20T07:39:22.254Z",
+        "age": 6,
+        "year": "2006年 · 过去的世界 · Daan Smit · 1年≈6秒",
+        "options": [
+          {
+            "k": "study",
+            "label": "读书",
+            "desc": "知识↑ 幸福↓"
+          },
+          {
+            "k": "play",
+            "label": "朋友·玩耍",
+            "desc": "人际关系↑ 幸福↑"
+          },
+          {
+            "k": "help",
+            "label": "帮忙家里",
+            "desc": "家人↑ 知识稍↓"
+          },
+          {
+            "k": "sport",
+            "label": "运动",
+            "desc": "健康↑"
+          },
+          {
+            "k": "hobby",
+            "label": "兴趣",
+            "desc": "幸福↑ 兴趣技能↑"
+          }
+        ],
+        "selectedK": "help",
+        "auto": true,
+        "autoEvidence": "ageChange",
+        "selectionMode": "auto",
+        "source": "age"
+      },
+      {
+        "at": "2026-11-20T07:39:26.446Z",
+        "age": 6,
+        "year": "2006年 · 过去的世界 · Daan Smit · 1年≈6秒",
+        "options": [
+          {
+            "k": "study",
+            "label": "读书",
+            "desc": "知识↑ 幸福↓"
+          },
+          {
+            "k": "play",
+            "label": "朋友·玩耍",
+            "desc": "人际关系↑ 幸福↑"
+          },
+          {
+            "k": "help",
+            "label": "帮忙家里",
+            "desc": "家人↑ 知识稍↓"
+          },
+          {
+            "k": "sport",
+            "label": "运动",
+            "desc": "健康↑"
+          },
+          {
+            "k": "hobby",
+            "label": "兴趣",
+            "desc": "幸福↑ 兴趣技能↑"
+          }
+        ],
+        "selectedK": "play",
+        "auto": false,
+        "autoEvidence": "trustedClick",
+        "selectionMode": "manual",
+        "source": "click"
+      },
+      {
+        "at": "2026-11-20T07:39:56.343Z",
+        "age": 8,
+        "year": "2008年 · 过去的世界 · Daan Smit · 1年≈6秒",
+        "options": [
+          {
+            "k": "study",
+            "label": "读书",
+            "desc": "知识↑ 幸福↓"
+          },
+          {
+            "k": "play",
+            "label": "朋友·玩耍",
+            "desc": "人际关系↑ 幸福↑"
+          },
+          {
+            "k": "help",
+            "label": "帮忙家里",
+            "desc": "家人↑ 知识稍↓"
+          },
+          {
+            "k": "sport",
+            "label": "运动",
+            "desc": "健康↑"
+          },
+          {
+            "k": "hobby",
+            "label": "兴趣",
+            "desc": "幸福↑ 兴趣技能↑"
+          }
+        ],
+        "selectedK": "study",
+        "auto": false,
+        "autoEvidence": "trustedClick",
+        "selectionMode": "manual",
+        "source": "click"
+      },
+      {
+        "at": "2026-11-20T07:42:31.617Z",
+        "age": 20,
+        "year": "2020年 · 过去的世界 · Daan Smit · 1年≈12秒",
+        "options": [
+          {
+            "k": "study",
+            "label": "读书",
+            "desc": "知识↑ 幸福↓"
+          },
+          {
+            "k": "play",
+            "label": "朋友·玩耍",
+            "desc": "人际关系↑ 幸福↑"
+          },
+          {
+            "k": "parttime",
+            "label": "打工",
+            "desc": "赚一点钱 · 知识↓"
+          },
+          {
+            "k": "career",
+            "label": "求职准备",
+            "desc": "第一份工作↑ 幸福↓"
+          },
+          {
+            "k": "sport",
+            "label": "运动",
+            "desc": "健康↑"
+          },
+          {
+            "k": "hobby",
+            "label": "兴趣",
+            "desc": "幸福↑ 兴趣技能↑"
+          }
+        ],
+        "selectedK": "play",
+        "auto": false,
+        "autoEvidence": "trustedClick",
+        "selectionMode": "manual",
+        "source": "click"
+      },
+      {
+        "at": "2026-11-20T07:43:14.607Z",
+        "age": 22,
+        "year": "2022年 · 过去的世界 · Daan Smit · 1年≈12秒",
+        "options": [
+          {
+            "k": "work",
+            "label": "埋首工作",
+            "desc": "收入·升迁↑ 健康·人际关系↓"
+          },
+          {
+            "k": "balance",
+            "label": "均衡",
+            "desc": "每样都顾一点"
+          },
+          {
+            "k": "family",
+            "label": "家人·朋友",
+            "desc": "人际关系↑ 幸福↑"
+          },
+          {
+            "k": "health",
+            "label": "健康管理",
+            "desc": "健康↑ 钱略↓"
+          },
+          {
+            "k": "learn",
+            "label": "自我提升",
+            "desc": "维持知识 · 转职邀约↑"
+          },
+          {
+            "k": "hobby",
+            "label": "兴趣",
+            "desc": "幸福↑ 兴趣技能↑"
+          }
+        ],
+        "selectedK": "family",
+        "auto": true,
+        "autoEvidence": "ageChange",
+        "selectionMode": "auto",
+        "source": "age"
+      },
+      {
+        "at": "2026-11-20T07:43:29.858Z",
+        "age": 22,
+        "year": "2022年 · 过去的世界 · Daan Smit · 1年≈12秒",
+        "options": [
+          {
+            "k": "work",
+            "label": "埋首工作",
+            "desc": "收入·升迁↑ 健康·人际关系↓"
+          },
+          {
+            "k": "balance",
+            "label": "均衡",
+            "desc": "每样都顾一点"
+          },
+          {
+            "k": "family",
+            "label": "家人·朋友",
+            "desc": "人际关系↑ 幸福↑"
+          },
+          {
+            "k": "health",
+            "label": "健康管理",
+            "desc": "健康↑ 钱略↓"
+          },
+          {
+            "k": "learn",
+            "label": "自我提升",
+            "desc": "维持知识 · 转职邀约↑"
+          },
+          {
+            "k": "hobby",
+            "label": "兴趣",
+            "desc": "幸福↑ 兴趣技能↑"
+          }
+        ],
+        "selectedK": "work",
+        "auto": false,
+        "autoEvidence": "trustedClick",
+        "selectionMode": "manual",
+        "source": "click"
+      },
+      {
+        "at": "2026-11-20T07:43:44.201Z",
+        "age": 23,
+        "year": "2023年 · 过去的世界 · Daan Smit · 1年≈12秒",
+        "options": [
+          {
+            "k": "work",
+            "label": "埋首工作",
+            "desc": "收入·升迁↑ 健康·人际关系↓"
+          },
+          {
+            "k": "balance",
+            "label": "均衡",
+            "desc": "每样都顾一点"
+          },
+          {
+            "k": "family",
+            "label": "家人·朋友",
+            "desc": "人际关系↑ 幸福↑"
+          },
+          {
+            "k": "health",
+            "label": "健康管理",
+            "desc": "健康↑ 钱略↓"
+          },
+          {
+            "k": "learn",
+            "label": "自我提升",
+            "desc": "知识↑ 转职邀约↑"
+          },
+          {
+            "k": "hobby",
+            "label": "兴趣",
+            "desc": "幸福↑ 兴趣技能↑"
+          }
+        ],
+        "selectedK": "balance",
+        "auto": false,
+        "autoEvidence": "trustedClick",
+        "selectionMode": "manual",
+        "source": "click"
+      },
+      {
+        "at": "2026-11-20T07:48:23.894Z",
+        "age": 30,
+        "year": "2030年 · 推估 · Daan Smit · 1年≈12秒",
+        "options": [
+          {
+            "k": "work",
+            "label": "埋首工作",
+            "desc": "收入·升迁↑ 健康·人际关系↓"
+          },
+          {
+            "k": "balance",
+            "label": "均衡",
+            "desc": "每样都顾一点"
+          },
+          {
+            "k": "family",
+            "label": "家人·朋友",
+            "desc": "人际关系↑ 幸福↑"
+          },
+          {
+            "k": "health",
+            "label": "健康管理",
+            "desc": "健康↑ 钱略↓"
+          },
+          {
+            "k": "learn",
+            "label": "自我提升",
+            "desc": "知识↑ 转职邀约↑"
+          },
+          {
+            "k": "hobby",
+            "label": "兴趣",
+            "desc": "幸福↑ 兴趣技能↑"
+          }
+        ],
+        "selectedK": "family",
+        "auto": false,
+        "autoEvidence": "trustedClick",
+        "selectionMode": "manual",
+        "source": "click"
+      },
+      {
+        "at": "2026-11-20T07:50:14.567Z",
+        "age": 36,
+        "year": "2036年 · 推估 · Daan Smit · 1年≈12秒",
+        "options": [
+          {
+            "k": "work",
+            "label": "埋首工作",
+            "desc": "收入·升迁↑ 健康·人际关系↓"
+          },
+          {
+            "k": "balance",
+            "label": "均衡",
+            "desc": "每样都顾一点"
+          },
+          {
+            "k": "family",
+            "label": "家人·朋友",
+            "desc": "人际关系↑ 幸福↑"
+          },
+          {
+            "k": "health",
+            "label": "健康管理",
+            "desc": "健康↑ 钱略↓"
+          },
+          {
+            "k": "learn",
+            "label": "自我提升",
+            "desc": "知识↑ 转职邀约↑"
+          },
+          {
+            "k": "hobby",
+            "label": "兴趣",
+            "desc": "幸福↑ 兴趣技能↑"
+          }
+        ],
+        "selectedK": "balance",
+        "auto": false,
+        "autoEvidence": "trustedClick",
+        "selectionMode": "manual",
+        "source": "click"
+      },
+      {
+        "at": "2026-11-20T07:57:44.837Z",
+        "age": 54,
+        "year": "2054年 · 推估 · Daan Smit · 1年≈12秒",
+        "options": [
+          {
+            "k": "work",
+            "label": "埋首工作",
+            "desc": "收入·升迁↑ 健康·人际关系↓"
+          },
+          {
+            "k": "balance",
+            "label": "均衡",
+            "desc": "每样都顾一点"
+          },
+          {
+            "k": "family",
+            "label": "家人·朋友",
+            "desc": "人际关系↑ 幸福↑"
+          },
+          {
+            "k": "health",
+            "label": "健康管理",
+            "desc": "健康↑ 钱略↓"
+          },
+          {
+            "k": "learn",
+            "label": "自我提升",
+            "desc": "知识↑ 转职邀约↑"
+          },
+          {
+            "k": "hobby",
+            "label": "兴趣",
+            "desc": "幸福↑ 兴趣技能↑"
+          }
+        ],
+        "selectedK": "family",
+        "auto": false,
+        "autoEvidence": "trustedClick",
+        "selectionMode": "manual",
+        "source": "click"
+      }
+    ],
+    "timeline": [],
+    "timelineCount": 1,
+    "timelineHash": "a26bdc50",
+    "notes": [],
+    "result": {
+      "stats": {
+        "maxIncome": 0,
+        "maxPct": 0,
+        "kidsBorn": 0,
+        "kidsLost": 0,
+        "moves": 0,
+        "decisions": 0
+      },
+      "years": [],
+      "deathAt": null,
+      "lifeAt": null,
+      "born": "BEL",
+      "era": "past",
+      "by": 2000,
+      "flagsWay": null,
+      "flagsAu": false,
+      "flagsFocusOwn": false,
+      "done": {},
+      "journalCount": 0
+    },
+    "warnings": [],
+    "backfilledIds": [
+      "buy"
+    ],
+    "snapCount": 172,
+    "snapBytes": 2061407,
+    "stateCount": 308,
+    "stateBytes": 16213863,
+    "lastStateAt": "2026-11-20T08:07:34.595Z",
+    "baselineDone": {}
+  }
+}

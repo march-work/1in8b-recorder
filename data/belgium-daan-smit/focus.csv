@@ -1,0 +1,58 @@
+﻿lifeId,at,age,year,optionK,optionLabel,optionDesc,selected,selectedK,auto,selectionMode,autoEvidence
+s1795160329798,2026-11-20T07:39:22.254Z,6,2006年 · 过去的世界 · Daan Smit · 1年≈6秒,study,读书,知识↑ 幸福↓,,help,1,auto,ageChange
+s1795160329798,2026-11-20T07:39:22.254Z,6,2006年 · 过去的世界 · Daan Smit · 1年≈6秒,play,朋友·玩耍,人际关系↑ 幸福↑,,help,1,auto,ageChange
+s1795160329798,2026-11-20T07:39:22.254Z,6,2006年 · 过去的世界 · Daan Smit · 1年≈6秒,help,帮忙家里,家人↑ 知识稍↓,1,help,1,auto,ageChange
+s1795160329798,2026-11-20T07:39:22.254Z,6,2006年 · 过去的世界 · Daan Smit · 1年≈6秒,sport,运动,健康↑,,help,1,auto,ageChange
+s1795160329798,2026-11-20T07:39:22.254Z,6,2006年 · 过去的世界 · Daan Smit · 1年≈6秒,hobby,兴趣,幸福↑ 兴趣技能↑,,help,1,auto,ageChange
+s1795160329798,2026-11-20T07:39:26.446Z,6,2006年 · 过去的世界 · Daan Smit · 1年≈6秒,study,读书,知识↑ 幸福↓,,play,0,manual,trustedClick
+s1795160329798,2026-11-20T07:39:26.446Z,6,2006年 · 过去的世界 · Daan Smit · 1年≈6秒,play,朋友·玩耍,人际关系↑ 幸福↑,1,play,0,manual,trustedClick
+s1795160329798,2026-11-20T07:39:26.446Z,6,2006年 · 过去的世界 · Daan Smit · 1年≈6秒,help,帮忙家里,家人↑ 知识稍↓,,play,0,manual,trustedClick
+s1795160329798,2026-11-20T07:39:26.446Z,6,2006年 · 过去的世界 · Daan Smit · 1年≈6秒,sport,运动,健康↑,,play,0,manual,trustedClick
+s1795160329798,2026-11-20T07:39:26.446Z,6,2006年 · 过去的世界 · Daan Smit · 1年≈6秒,hobby,兴趣,幸福↑ 兴趣技能↑,,play,0,manual,trustedClick
+s1795160329798,2026-11-20T07:39:56.343Z,8,2008年 · 过去的世界 · Daan Smit · 1年≈6秒,study,读书,知识↑ 幸福↓,1,study,0,manual,trustedClick
+s1795160329798,2026-11-20T07:39:56.343Z,8,2008年 · 过去的世界 · Daan Smit · 1年≈6秒,play,朋友·玩耍,人际关系↑ 幸福↑,,study,0,manual,trustedClick
+s1795160329798,2026-11-20T07:39:56.343Z,8,2008年 · 过去的世界 · Daan Smit · 1年≈6秒,help,帮忙家里,家人↑ 知识稍↓,,study,0,manual,trustedClick
+s1795160329798,2026-11-20T07:39:56.343Z,8,2008年 · 过去的世界 · Daan Smit · 1年≈6秒,sport,运动,健康↑,,study,0,manual,trustedClick
+s1795160329798,2026-11-20T07:39:56.343Z,8,2008年 · 过去的世界 · Daan Smit · 1年≈6秒,hobby,兴趣,幸福↑ 兴趣技能↑,,study,0,manual,trustedClick
+s1795160329798,2026-11-20T07:42:31.617Z,20,2020年 · 过去的世界 · Daan Smit · 1年≈12秒,study,读书,知识↑ 幸福↓,,play,0,manual,trustedClick
+s1795160329798,2026-11-20T07:42:31.617Z,20,2020年 · 过去的世界 · Daan Smit · 1年≈12秒,play,朋友·玩耍,人际关系↑ 幸福↑,1,play,0,manual,trustedClick
+s1795160329798,2026-11-20T07:42:31.617Z,20,2020年 · 过去的世界 · Daan Smit · 1年≈12秒,parttime,打工,赚一点钱 · 知识↓,,play,0,manual,trustedClick
+s1795160329798,2026-11-20T07:42:31.617Z,20,2020年 · 过去的世界 · Daan Smit · 1年≈12秒,career,求职准备,第一份工作↑ 幸福↓,,play,0,manual,trustedClick
+s1795160329798,2026-11-20T07:42:31.617Z,20,2020年 · 过去的世界 · Daan Smit · 1年≈12秒,sport,运动,健康↑,,play,0,manual,trustedClick
+s1795160329798,2026-11-20T07:42:31.617Z,20,2020年 · 过去的世界 · Daan Smit · 1年≈12秒,hobby,兴趣,幸福↑ 兴趣技能↑,,play,0,manual,trustedClick
+s1795160329798,2026-11-20T07:43:14.607Z,22,2022年 · 过去的世界 · Daan Smit · 1年≈12秒,work,埋首工作,收入·升迁↑ 健康·人际关系↓,,family,1,auto,ageChange
+s1795160329798,2026-11-20T07:43:14.607Z,22,2022年 · 过去的世界 · Daan Smit · 1年≈12秒,balance,均衡,每样都顾一点,,family,1,auto,ageChange
+s1795160329798,2026-11-20T07:43:14.607Z,22,2022年 · 过去的世界 · Daan Smit · 1年≈12秒,family,家人·朋友,人际关系↑ 幸福↑,1,family,1,auto,ageChange
+s1795160329798,2026-11-20T07:43:14.607Z,22,2022年 · 过去的世界 · Daan Smit · 1年≈12秒,health,健康管理,健康↑ 钱略↓,,family,1,auto,ageChange
+s1795160329798,2026-11-20T07:43:14.607Z,22,2022年 · 过去的世界 · Daan Smit · 1年≈12秒,learn,自我提升,维持知识 · 转职邀约↑,,family,1,auto,ageChange
+s1795160329798,2026-11-20T07:43:14.607Z,22,2022年 · 过去的世界 · Daan Smit · 1年≈12秒,hobby,兴趣,幸福↑ 兴趣技能↑,,family,1,auto,ageChange
+s1795160329798,2026-11-20T07:43:29.858Z,22,2022年 · 过去的世界 · Daan Smit · 1年≈12秒,work,埋首工作,收入·升迁↑ 健康·人际关系↓,1,work,0,manual,trustedClick
+s1795160329798,2026-11-20T07:43:29.858Z,22,2022年 · 过去的世界 · Daan Smit · 1年≈12秒,balance,均衡,每样都顾一点,,work,0,manual,trustedClick
+s1795160329798,2026-11-20T07:43:29.858Z,22,2022年 · 过去的世界 · Daan Smit · 1年≈12秒,family,家人·朋友,人际关系↑ 幸福↑,,work,0,manual,trustedClick
+s1795160329798,2026-11-20T07:43:29.858Z,22,2022年 · 过去的世界 · Daan Smit · 1年≈12秒,health,健康管理,健康↑ 钱略↓,,work,0,manual,trustedClick
+s1795160329798,2026-11-20T07:43:29.858Z,22,2022年 · 过去的世界 · Daan Smit · 1年≈12秒,learn,自我提升,维持知识 · 转职邀约↑,,work,0,manual,trustedClick
+s1795160329798,2026-11-20T07:43:29.858Z,22,2022年 · 过去的世界 · Daan Smit · 1年≈12秒,hobby,兴趣,幸福↑ 兴趣技能↑,,work,0,manual,trustedClick
+s1795160329798,2026-11-20T07:43:44.201Z,23,2023年 · 过去的世界 · Daan Smit · 1年≈12秒,work,埋首工作,收入·升迁↑ 健康·人际关系↓,,balance,0,manual,trustedClick
+s1795160329798,2026-11-20T07:43:44.201Z,23,2023年 · 过去的世界 · Daan Smit · 1年≈12秒,balance,均衡,每样都顾一点,1,balance,0,manual,trustedClick
+s1795160329798,2026-11-20T07:43:44.201Z,23,2023年 · 过去的世界 · Daan Smit · 1年≈12秒,family,家人·朋友,人际关系↑ 幸福↑,,balance,0,manual,trustedClick
+s1795160329798,2026-11-20T07:43:44.201Z,23,2023年 · 过去的世界 · Daan Smit · 1年≈12秒,health,健康管理,健康↑ 钱略↓,,balance,0,manual,trustedClick
+s1795160329798,2026-11-20T07:43:44.201Z,23,2023年 · 过去的世界 · Daan Smit · 1年≈12秒,learn,自我提升,知识↑ 转职邀约↑,,balance,0,manual,trustedClick
+s1795160329798,2026-11-20T07:43:44.201Z,23,2023年 · 过去的世界 · Daan Smit · 1年≈12秒,hobby,兴趣,幸福↑ 兴趣技能↑,,balance,0,manual,trustedClick
+s1795160329798,2026-11-20T07:48:23.894Z,30,2030年 · 推估 · Daan Smit · 1年≈12秒,work,埋首工作,收入·升迁↑ 健康·人际关系↓,,family,0,manual,trustedClick
+s1795160329798,2026-11-20T07:48:23.894Z,30,2030年 · 推估 · Daan Smit · 1年≈12秒,balance,均衡,每样都顾一点,,family,0,manual,trustedClick
+s1795160329798,2026-11-20T07:48:23.894Z,30,2030年 · 推估 · Daan Smit · 1年≈12秒,family,家人·朋友,人际关系↑ 幸福↑,1,family,0,manual,trustedClick
+s1795160329798,2026-11-20T07:48:23.894Z,30,2030年 · 推估 · Daan Smit · 1年≈12秒,health,健康管理,健康↑ 钱略↓,,family,0,manual,trustedClick
+s1795160329798,2026-11-20T07:48:23.894Z,30,2030年 · 推估 · Daan Smit · 1年≈12秒,learn,自我提升,知识↑ 转职邀约↑,,family,0,manual,trustedClick
+s1795160329798,2026-11-20T07:48:23.894Z,30,2030年 · 推估 · Daan Smit · 1年≈12秒,hobby,兴趣,幸福↑ 兴趣技能↑,,family,0,manual,trustedClick
+s1795160329798,2026-11-20T07:50:14.567Z,36,2036年 · 推估 · Daan Smit · 1年≈12秒,work,埋首工作,收入·升迁↑ 健康·人际关系↓,,balance,0,manual,trustedClick
+s1795160329798,2026-11-20T07:50:14.567Z,36,2036年 · 推估 · Daan Smit · 1年≈12秒,balance,均衡,每样都顾一点,1,balance,0,manual,trustedClick
+s1795160329798,2026-11-20T07:50:14.567Z,36,2036年 · 推估 · Daan Smit · 1年≈12秒,family,家人·朋友,人际关系↑ 幸福↑,,balance,0,manual,trustedClick
+s1795160329798,2026-11-20T07:50:14.567Z,36,2036年 · 推估 · Daan Smit · 1年≈12秒,health,健康管理,健康↑ 钱略↓,,balance,0,manual,trustedClick
+s1795160329798,2026-11-20T07:50:14.567Z,36,2036年 · 推估 · Daan Smit · 1年≈12秒,learn,自我提升,知识↑ 转职邀约↑,,balance,0,manual,trustedClick
+s1795160329798,2026-11-20T07:50:14.567Z,36,2036年 · 推估 · Daan Smit · 1年≈12秒,hobby,兴趣,幸福↑ 兴趣技能↑,,balance,0,manual,trustedClick
+s1795160329798,2026-11-20T07:57:44.837Z,54,2054年 · 推估 · Daan Smit · 1年≈12秒,work,埋首工作,收入·升迁↑ 健康·人际关系↓,,family,0,manual,trustedClick
+s1795160329798,2026-11-20T07:57:44.837Z,54,2054年 · 推估 · Daan Smit · 1年≈12秒,balance,均衡,每样都顾一点,,family,0,manual,trustedClick
+s1795160329798,2026-11-20T07:57:44.837Z,54,2054年 · 推估 · Daan Smit · 1年≈12秒,family,家人·朋友,人际关系↑ 幸福↑,1,family,0,manual,trustedClick
+s1795160329798,2026-11-20T07:57:44.837Z,54,2054年 · 推估 · Daan Smit · 1年≈12秒,health,健康管理,健康↑ 钱略↓,,family,0,manual,trustedClick
+s1795160329798,2026-11-20T07:57:44.837Z,54,2054年 · 推估 · Daan Smit · 1年≈12秒,learn,自我提升,知识↑ 转职邀约↑,,family,0,manual,trustedClick
+s1795160329798,2026-11-20T07:57:44.837Z,54,2054年 · 推估 · Daan Smit · 1年≈12秒,hobby,兴趣,幸福↑ 兴趣技能↑,,family,0,manual,trustedClick

@@ -1,0 +1,11 @@
+.DS_Store
+node_modules/
+__pycache__/
+*.pyc
+*.crdownload
+*.tmp
+profile/
+profiles/
+*.log
+.env
+.env.*
