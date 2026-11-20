@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>1in8b Belgium dataset viewer</title>
+<style>
+:root{--ink:#17222b;--muted:#66727c;--line:#dde3e7;--bg:#f4f6f7;--card:#fff;--accent:#2f6f8f}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:14px/1.55 system-ui,-apple-system,"Segoe UI",sans-serif}
+header{background:#13212a;color:#fff;padding:18px 22px}
+header h1{margin:0;font-size:20px}
+header p{margin:4px 0 0;color:#c6d2d9;font-size:12px}
+main{display:grid;grid-template-columns:240px minmax(0,1fr);gap:14px;max-width:1400px;margin:14px auto;padding:0 14px}
+aside,.card{background:var(--card);border:1px solid var(--line);border-radius:10px}
+aside{padding:10px;height:max-content}
+aside h2{font-size:13px;margin:4px 0 8px}
+.life{display:block;width:100%;text-align:left;border:1px solid var(--line);background:#fafbfc;border-radius:8px;padding:8px;margin:0 0 6px;cursor:pointer;font:inherit}
+.life.active{border-color:var(--accent);background:#eef7fb}
+.life b{display:block;font-size:13px}
+.life small{display:block;color:var(--muted)}
+.content{min-width:0}
+.card{padding:14px}
+h2{font-size:17px;margin:0 0 8px}
+h3{font-size:14px;margin:18px 0 6px}
+.meta{color:var(--muted);font-size:12px}
+.tabs{display:flex;gap:6px;flex-wrap:wrap;margin:10px 0}
+.tab{border:1px solid var(--line);background:#f6f7f8;border-radius:999px;padding:5px 10px;cursor:pointer;font:inherit;font-size:12px}
+.tab.active{background:#13212a;color:#fff;border-color:#13212a}
+.filters{display:flex;gap:6px;flex-wrap:wrap;margin:8px 0 12px}
+.filter{border:1px solid var(--line);background:#fff;border-radius:999px;padding:4px 9px;cursor:pointer;font:inherit;font-size:12px}
+.filter.active{background:var(--accent);color:#fff;border-color:var(--accent)}
+details{border:1px solid var(--line);border-radius:8px;background:#fbfbfc;padding:7px 9px;margin:0 0 6px}
+details[open]{background:#fff}
+summary{cursor:pointer;list-style:none;outline:none}
+summary::-webkit-details-marker{display:none}
+summary:before{content:"▸";display:inline-block;width:12px;color:var(--muted)}
+details[open] summary:before{content:"▾"}
+.title{font-weight:650}
+.meta-line{display:block;color:var(--muted);font-size:11.5px;margin-left:12px;margin-top:2px}
+.body{margin:8px 0 0 12px}
+.opts{display:flex;flex-direction:column;gap:4px;margin-top:6px}
+.opt{border:1px solid var(--line);border-radius:6px;padding:4px 6px;background:#fff}
+.opt.sel{border-color:#79b78a;background:#f1faf3}
+.k{font-family:ui-monospace,Menlo,monospace;color:var(--muted);font-size:11px}
+.note{border-left:3px solid #f1c40f;background:#fffaf0;padding:5px 7px;border-radius:4px;margin-top:6px;white-space:pre-wrap}
+.text{white-space:pre-wrap;word-break:break-word}
+.tl{padding:6px 0;border-bottom:1px solid var(--line)}
+.tl small{color:var(--muted);display:block}
+.empty{color:var(--muted);text-align:center;padding:18px;border:1px dashed var(--line);border-radius:8px}
+.pager{text-align:center;margin-top:10px}
+.pager button{border:1px solid var(--line);background:#f6f7f8;border-radius:7px;padding:5px 10px;cursor:pointer;font:inherit}
+.error{background:#fdecea;color:#7a1c1c;border:1px solid #e6a1a1;border-radius:8px;padding:10px;margin:10px 0}
+@media(max-width:900px){main{grid-template-columns:1fr}aside{order:2}}
+</style>
+</head>
+<body>
+<header>
+  <h1>1in8b Belgium dataset viewer</h1>
+  <p>Daan Smit / BEL · static viewer · reads raw-indexeddb.json</p>
+</header>
+<main>
+  <aside class="card">
+    <h2>人生</h2>
+    <div id="lives"></div>
+    <p class="meta" id="loadState">加载中…</p>
+  </aside>
+  <section class="content">
+    <div class="card" id="app">
+      <div class="empty">加载 raw-indexeddb.json…</div>
+    </div>
+  </section>
+</main>
+<script>
+const DATA_URL = '../data/belgium-daan-smit/raw-indexeddb.json';
+const esc = (v) => String(v == null ? '' : v).replace(/[&<>"']/g, (c) => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const modeLabel = (m) => m === 'manual' ? '手动' : m === 'auto' ? '自动' : m === 'auto-quiet' ? '静默自动' : m === 'backfill' ? '历史' : '未确认';
+const state = { raw:null, main:null, lives:[], lifeId:null, tab:'decisions', filter:'all', limit:50, snapLimit:40, stateLimit:40 };
+const el = (id) => document.getElementById(id);
+const byte = (n) => n == null ? '' : (n >= 1048576 ? (n/1048576).toFixed(1)+' MB' : n >= 1024 ? (n/1024).toFixed(1)+' KB' : n+' B');
+
+function init() {
+  const raw = state.raw;
+  const mainRow = (raw.data.state || []).find((r) => r && r.k === 'main') || raw.data.state[0];
+  state.main = mainRow && mainRow.v;
+  state.lives = Object.values((state.main && state.main.lives) || {});
+  state.lifeId = state.lives[0] ? state.lives[0].lifeId : null;
+  renderLives();
+  render();
+}
+
+function setLife(id) {
+  state.lifeId = id; state.tab = 'decisions'; state.filter = 'all'; state.limit = 50;
+  renderLives(); render();
+}
+function setTab(tab) { state.tab = tab; state.limit = 50; render(); }
+function setFilter(f) { state.filter = f; state.limit = 50; render(); }
+
+function renderLives() {
+  el('lives').innerHTML = state.lives.map((l) => {
+    const c = l.decisions ? l.decisions.length : 0;
+    return '<button class="life' + (l.lifeId === state.lifeId ? ' active' : '') + '" data-life="' + esc(l.lifeId) + '"><b>' + esc((l.meta || {}).name || l.lifeId) + '</b><small>' + esc((l.meta || {}).born || '') + ' · ' + (l.meta && l.meta.age != null ? esc(l.meta.age) + '岁' : '') + ' · ' + c + ' 抉择</small></button>';
+  }).join('') || '<div class="empty">无人生</div>';
+  el('loadState').textContent = state.lives.length + ' 个人生';
+}
+
+function currentLife() {
+  return state.lives.find((l) => l.lifeId === state.lifeId) || state.lives[0] || null;
+}
+function currentStates() {
+  return (state.raw.data.states || []).filter((s) => s && s.lifeId === state.lifeId).sort((a,b) => String(a.at).localeCompare(String(b.at)));
+}
+function currentSnapshots() {
+  return (state.raw.data.snapshots || []).filter((s) => s && s.lifeId === state.lifeId).sort((a,b) => String(a.at).localeCompare(String(b.at)));
+}
+function currentTimeline() {
+  const t = (state.raw.data.timelines || []).find((x) => x && x.lifeId === state.lifeId);
+  return t ? (t.entries || []) : [];
+}
+function currentCountries() {
+  return (state.raw.data.countries || []);
+}
+
+function render() {
+  const life = currentLife();
+  if (!life) { el('app').innerHTML = '<div class="empty">无数据</div>'; return; }
+  const states = currentStates(), snaps = currentSnapshots(), timeline = currentTimeline();
+  const age = life.meta && life.meta.age;
+  const tab = state.tab;
+  const tabs = [
+    ['decisions','抉择 ' + (life.decisions || []).length],
+    ['timeline','时间线 ' + timeline.length],
+    ['focus','重心 ' + (life.focusPicks || []).length],
+    ['states','状态 ' + states.length],
+    ['snapshots','快照 ' + snaps.length],
+    ['country','国家 ' + currentCountries().length]
+  ];
+  let html = '<h2>' + esc((life.meta || {}).name || life.lifeId) + '</h2>';
+  html += '<div class="meta">' + esc((life.meta || {}).born || '') + ' · ' + (age == null ? '' : esc(age) + '岁') + ' · ' + (life.decisions || []).length + ' 抉择 · ' + states.length + ' 状态 · ' + snaps.length + ' 快照</div>';
+  html += '<div class="tabs">' + tabs.map(([k,label]) => '<button class="tab' + (tab === k ? ' active' : '') + '" data-tab="' + k + '">' + esc(label) + '</button>').join('') + '</div>';
+  if (tab === 'decisions') html += renderDecisions(life);
+  else if (tab === 'timeline') html += renderTimeline(timeline);
+  else if (tab === 'focus') html += renderFocus(life);
+  else if (tab === 'states') html += renderStates(states);
+  else if (tab === 'snapshots') html += renderSnapshots(snaps);
+  else html += renderCountries();
+  el('app').innerHTML = html;
+}
+
+function renderDecisions(life) {
+  let list = (life.decisions || []).slice().sort((a,b) => (Date.parse(b.at)||0) - (Date.parse(a.at)||0));
+  if (state.filter !== 'all') {
+    list = list.filter((d) => {
+      const m = d.selectionMode || (d.auto ? 'auto' : 'manual');
+      if (state.filter === 'backfill') return m === 'backfill' || d.source === 'backfill' || d.source === 'save-diff';
+      if (state.filter === 'quiet') return m === 'auto-quiet';
+      if (state.filter === 'auto') return m === 'auto';
+      if (state.filter === 'manual') return m === 'manual';
+      return true;
+    });
+  }
+  const filters = [['all','全部'],['manual','手动'],['auto','自动'],['quiet','静默'],['backfill','历史']];
+  let html = '<div class="filters">' + filters.map(([k,l]) => '<button class="filter' + (state.filter === k ? ' active' : '') + '" data-filter="' + k + '">' + l + '</button>').join('') + '</div>';
+  if (!list.length) return html + '<div class="empty">没有抉择</div>';
+  const shown = list.slice(0, state.limit);
+  html += shown.map((d) => {
+    const m = d.selectionMode || (d.auto ? 'auto' : 'manual');
+    const selected = d.selectedLabel || (d.selectedK != null ? '选项 ' + d.selectedK : '');
+    const meta = [d.age == null ? '' : d.age + '岁', d.year || '', modeLabel(m), d.type === 'question' ? '问题' : ''].filter(Boolean).join(' · ');
+    let body = '';
+    if (d.question) body += '<div>问题：' + esc(d.question) + '</div>';
+    if (d.options && d.options.length) body += '<div class="opts">' + d.options.map((o) => '<div class="opt' + (String(o.k) === String(d.selectedK) ? ' sel' : '') + '"><span class="k">' + (String(o.k) === String(d.selectedK) ? '✓' : '○') + '</span> <b>' + esc(o.label || o.k) + '</b>' + (o.sub ? ' <span class="meta">' + esc(o.sub) + '</span>' : '') + '</div>').join('') + '</div>';
+    else body += '<div class="note">旧记录：选项未保存在旧存档里。</div>';
+    if (d.outcomeText && d.outcomeText !== selected) body += '<div>结果：' + esc(d.outcomeText) + '</div>';
+    if (d.note) body += '<div>备注：' + esc(d.note) + '</div>';
+    return '<details><summary><span class="title">' + esc(d.title || d.question || '抉择') + '</span><span class="meta-line">' + esc(meta) + (selected ? ' · ' + esc(selected) : '') + '</span></summary><div class="body">' + body + '</div></details>';
+  }).join('');
+  if (list.length > state.limit) html += '<div class="pager"><button data-more="decisions">显示更多（' + shown.length + ' / ' + list.length + '）</button></div>';
+  return html;
+}
+
+function renderTimeline(entries) {
+  if (!entries.length) return '<div class="empty">时间线为空</div>';
+  const shown = entries.slice().reverse().slice(0, state.limit);
+  let html = shown.map((e) => '<div class="tl"><div class="text">' + esc(e.text || e.q || '') + '</div>' + (e.fact ? '<small>' + esc(e.fact) + '</small>' : '') + '<small>' + esc(e.a == null ? '' : e.a + '岁') + ' · ' + esc(e.kind || '') + (e.star ? ' · ★' : '') + '</small></div>').join('');
+  if (entries.length > state.limit) html += '<div class="pager"><button data-more="timeline">显示更多</button></div>';
+  return html;
+}
+
+function renderFocus(life) {
+  const list = (life.focusPicks || []).slice().sort((a,b) => (Date.parse(b.at)||0) - (Date.parse(a.at)||0));
+  if (!list.length) return '<div class="empty">没有重心记录</div>';
+  return list.slice(0, state.limit).map((f) => {
+    const opts = (f.options || []).map((o) => '<div class="opt' + (String(o.k) === String(f.selectedK) ? ' sel' : '') + '"><b>' + esc(o.label || o.k) + '</b>' + (o.desc ? ' <span class="meta">' + esc(o.desc) + '</span>' : '') + '</div>').join('');
+    return '<details><summary><span class="title">' + esc(f.selectedLabel || f.selectedK) + '</span><span class="meta-line">' + esc(f.age == null ? '' : f.age + '岁') + ' · ' + esc(modeLabel(f.selectionMode || (f.auto ? 'auto' : 'manual'))) + '</span></summary><div class="body"><div class="opts">' + opts + '</div></div></details>';
+  }).join('');
+}
+
+function renderStates(states) {
+  if (!states.length) return '<div class="empty">没有状态照片</div>';
+  const list = states.slice().reverse();
+  const shown = list.slice(0, state.stateLimit);
+  let html = shown.map((s) => {
+    const id = s.identity || {}, st = s.stats || {}, mon = s.money || {}, fam = s.family || {};
+    const family = [fam.mother, fam.father, fam.partner].filter(Boolean).map((p) => (p.name || '') + (p.age == null ? '' : ' ' + p.age + '岁') + (p.job ? ' · ' + p.job : '')).join('；');
+    return '<details><summary><span class="title">' + esc(s.age == null ? '' : s.age + '岁') + ' · ' + esc(s.reason || '') + '</span><span class="meta-line">' + esc(s.at || '') + ' · ' + esc(s.year || '') + ' · ' + byte(s.bytes) + '</span></summary><div class="body"><div class="meta">' + esc(id.name || '') + ' · ' + esc(id.sexLabel || '') + ' · ' + esc(id.born || '') + ' → ' + esc(id.cur || '') + '</div><div>健康 ' + esc(st.health) + ' · 幸福 ' + esc(st.happiness) + ' · 知识 ' + esc(st.knowledge) + ' · 人际关系 ' + esc(st.relationships) + '</div><div>现金 ' + esc(mon.cash) + ' · 房产 ' + esc(mon.house) + ' · 债务 ' + esc(mon.debt) + ' · 收入 ' + esc(mon.income) + '</div>' + (family ? '<div>家人：' + esc(family) + '</div>' : '') + (s.visible && s.visible.family ? '<details><summary>家人与生活面板原文</summary><div class="text">' + esc(s.visible.family) + '</div></details>' : '') + '</div></details>';
+  }).join('');
+  if (list.length > state.stateLimit) html += '<div class="pager"><button data-more="states">显示更多（' + shown.length + ' / ' + list.length + '）</button></div>';
+  return html;
+}
+
+function renderSnapshots(snaps) {
+  if (!snaps.length) return '<div class="empty">没有文本快照</div>';
+  const list = snaps.slice().reverse();
+  const shown = list.slice(0, state.snapLimit);
+  let html = shown.map((s) => '<details><summary><span class="title">' + esc(s.type || '快照') + '</span><span class="meta-line">' + esc(s.age == null ? '' : s.age + '岁') + ' · ' + esc(s.year || '') + ' · ' + byte(s.bytes) + '</span></summary><div class="body"><div class="text">' + esc(s.text || '') + '</div></div></details>').join('');
+  if (list.length > state.snapLimit) html += '<div class="pager"><button data-more="snapshots">显示更多（' + shown.length + ' / ' + list.length + '）</button></div>';
+  return html;
+}
+
+function renderCountries() {
+  const cs = currentCountries();
+  if (!cs.length) return '<div class="empty">没有国家资料</div>';
+  return cs.map((c) => '<h3>' + esc(c.countryName || c.countryCode) + '</h3><div class="meta">' + esc(c.era || '') + ' · ' + esc(c.capturedAt || '') + '</div>' + ((c.stats && c.stats.pairs) || []).map((p) => '<div class="tl"><span class="text">' + esc(p.label) + '</span><small>' + esc(p.value) + '</small></div>').join('')).join('');
+}
+
+document.addEventListener('click', (e) => {
+  const t = e.target;
+  if (!t || !t.closest) return;
+  const life = t.closest('[data-life]');
+  if (life) { setLife(life.getAttribute('data-life')); return; }
+  const tab = t.closest('[data-tab]');
+  if (tab) { setTab(tab.getAttribute('data-tab')); return; }
+  const filter = t.closest('[data-filter]');
+  if (filter) { setFilter(filter.getAttribute('data-filter')); return; }
+  const more = t.closest('[data-more]');
+  if (more) {
+    const what = more.getAttribute('data-more');
+    if (what === 'decisions') state.limit += 50;
+    if (what === 'states') state.stateLimit += 40;
+    if (what === 'snapshots') state.snapLimit += 40;
+    if (what === 'timeline') state.limit += 100;
+    render();
+  }
+});
+
+fetch(DATA_URL).then((r) => {
+  if (!r.ok) throw new Error('HTTP ' + r.status);
+  return r.json();
+}).then((raw) => {
+  state.raw = raw;
+  init();
+}).catch((e) => {
+  el('app').innerHTML = '<div class="error">无法加载数据：' + esc(e.message) + '<br><br>请从仓库根目录运行：<br><code>python3 -m http.server 8080</code><br>然后打开 <code>http://localhost:8080/viewer/</code></div>';
+  el('loadState').textContent = '加载失败';
+});
+</script>
+</body>
+</html>

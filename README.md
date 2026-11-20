@@ -19,16 +19,16 @@
 - 按人生查看：当前人生、所有人生、返回、筛选
 - 删除单个人生、清空全部、已删除人生不会被补录复活
 - 导出 JSON、JSONL、CSV
+- 导入 raw-indexeddb.json，合并历史数据
+- 静态查看器，无需 Tampermonkey
 
 ## 当前版本
 
-**1.5.0**
+**1.6.0**
 
-- 取消文本快照单局 2 MB / 全部 50 MB 上限
-- 取消单张 20,000 字符截断（年度/面板、出生证明、开局说明）
-- 不再生成 `snapcap` 警告
-- 更新时清除已有 `snapcap` 提示
-- 其余记录、导出、删除、查看逻辑不变
+- 增加 JSON 数据导入/合并，不覆盖现有记录
+- 增加静态数据查看器，不安装脚本也能看比利时历史
+- 保留 1.5.0 的文本快照容量改动
 
 ## 安装
 
@@ -55,6 +55,31 @@ https://raw.githubusercontent.com/march-work/1in8b-recorder/main/src/1in8b-recor
 ```
 
 详细步骤见 [install/README.md](install/README.md)。
+
+## 导入数据
+
+新电脑安装脚本后：
+
+1. 打开记录器 → `所有人生` → `导出 / 维护`
+2. 点 `导入 JSON`
+3. 选择 `data/belgium-daan-smit/raw-indexeddb.json`
+4. 等待合并完成，历史会出现在所有人生列表
+
+导入是合并，不清空现有记录。它只恢复记录器历史，不会恢复游戏本身的 localStorage 存档，也不能继续那一局游戏。
+
+## 静态查看器
+
+不安装脚本也可以看数据：
+
+```bash
+python3 -m http.server 8080
+```
+
+打开：
+
+```text
+http://127.0.0.1:8080/viewer/
+```
 
 ## 使用
 
@@ -97,6 +122,7 @@ https://raw.githubusercontent.com/march-work/1in8b-recorder/main/src/1in8b-recor
 src/        Tampermonkey 用户脚本
 install/    安装脚本与说明
 docs/       设计、数据格式、隐私、测试
+viewer/     静态数据查看器
 data/       比利时人生数据样本
 ```
 

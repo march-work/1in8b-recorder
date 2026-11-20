@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         1in8b Recorder
 // @namespace    local.1in8b.recorder
-// @version      1.5.0
+// @version      1.6.0
 // @description  Record settings, decisions, all options, focus picks, timeline, text snapshots and structured state on 1in8b.life, with per-life history viewer and deletion
 // @match        https://1in8b.life/*
 // @match        https://www.1in8b.life/*
@@ -161,7 +161,7 @@
   const ui = {
     host: null, shadow: null, fab: null, fabText: null, fabDot: null,
     panel: null, status: null, body: null, banner: null, toasts: null, busy: false,
-    back: null, title: null,
+    back: null, title: null, importFile: null,
     view: 'life', viewLifeId: null, tab: 'decisions', filter: 'all',
     limit: 50, timelineLimit: 100,
     timelineCache: Object.create(null), timelineLoading: Object.create(null),
@@ -3291,7 +3291,7 @@
     lines.push('<div class="row"><button type="button" data-act="jsonl">快照 JSONL</button><button type="button" data-act="states-csv">状态 CSV</button><button type="button" data-act="countries-csv">国家 CSV</button></div>');
     lines.push('<div class="row"><button type="button" data-act="focus">全部重心 CSV</button><button type="button" data-act="timeline">全部时间线 CSV</button></div>');
     lines.push('<div class="section-sub">维护</div>');
-    lines.push('<div class="row"><button type="button" data-act="refresh">刷新补录</button><button type="button" class="danger-btn" data-act="clear">清空全部</button></div>');
+    lines.push('<div class="row"><button type="button" data-act="import">导入 JSON</button><button type="button" data-act="refresh">刷新补录</button><button type="button" class="danger-btn" data-act="clear">清空全部</button></div>');
     if (ui.busy) lines.push('<div class="muted">导出中…</div>');
     lines.push('</details>');
     const warns = state.diagnostics.warnings || [];
@@ -3472,7 +3472,8 @@
       '<div id="banner" class="banner" hidden><span id="bannerText"></span><button id="bannerClose" class="icon" type="button" aria-label="关闭">×</button></div>' +
       '<div id="toasts" class="toasts" aria-live="polite"></div>' +
       '<button id="fab" class="fab" type="button"><span id="fabDot" class="dot" hidden></span><span id="fabText">1in8b 本局 0</span></button>' +
-      '<div id="panel" class="panel" hidden><div class="ph"><button id="back" class="icon back" type="button" aria-label="返回所有人生" hidden>←</button><b id="title">1in8b 所有人生</b><span id="status" class="status">初始化</span><button id="close" class="icon" type="button" aria-label="关闭">×</button></div><div id="body" class="body"></div></div>';
+      '<div id="panel" class="panel" hidden><div class="ph"><button id="back" class="icon back" type="button" aria-label="返回所有人生" hidden>←</button><b id="title">1in8b 所有人生</b><span id="status" class="status">初始化</span><button id="close" class="icon" type="button" aria-label="关闭">×</button></div><div id="body" class="body"></div></div>' +
+      '<input id="importFile" type="file" accept=".json,application/json" hidden>';
     ui.host = host;
     ui.shadow = shadow;
     ui.banner = shadow.getElementById('banner');
@@ -3485,11 +3486,22 @@
     ui.title = shadow.getElementById('title');
     ui.status = shadow.getElementById('status');
     ui.body = shadow.getElementById('body');
+    ui.importFile = shadow.getElementById('importFile');
     ui.view = live.lifeId && state.lives[live.lifeId] ? 'life' : 'all';
     ui.viewLifeId = ui.view === 'life' ? live.lifeId : null;
     shadow.addEventListener('click', onUIAction, true);
     shadow.addEventListener('toggle', onDetailsToggle, true);
+    shadow.addEventListener('change', onImportFile, true);
     updateUI();
+  }
+
+  function onImportFile(e) {
+    const input = e.target;
+    if (!input || input.id !== 'importFile') return;
+    const file = input.files && input.files[0];
+    input.value = '';
+    if (!file) return;
+    runAsync(() => importRecorderFile(file));
   }
 
   function onDetailsToggle(e) {
@@ -3595,6 +3607,9 @@
     else if (act === 'decisions') runAsync(exportDecisionsCSV);
     else if (act === 'focus') runAsync(exportFocusCSV);
     else if (act === 'timeline') runAsync(exportTimelineCSV);
+    else if (act === 'import') {
+      if (ui.importFile) ui.importFile.click();
+    }
     else if (act === 'refresh') { backfillAll(); updateUI(); }
     else if (act === 'clear') runAsync(clearAll);
   }
@@ -3845,6 +3860,160 @@
       }
     }
     download('1in8b-timeline-' + stamp() + '.csv', toCSV(headers, rows), 'text/csv;charset=utf-8');
+  }
+
+  function mergeImportedLife(local, incoming) {
+    if (!local || !incoming) return;
+    local.meta = Object.assign({}, incoming.meta || {}, local.meta || {});
+    local.source = local.source || incoming.source;
+    local.captureStatus = local.captureStatus || incoming.captureStatus;
+    local.startedAt = local.startedAt || incoming.startedAt || null;
+    local.endedAt = local.endedAt || incoming.endedAt || null;
+    if (!local.result && incoming.result) local.result = clone(incoming.result);
+    const seenDec = new Set((local.decisions || []).map((d) => d && (d.id || d.decisionId)).filter((x) => x != null).map(String));
+    for (const d of (incoming.decisions || [])) {
+      const k = d && (d.id || d.decisionId);
+      if (k != null && seenDec.has(String(k))) continue;
+      (local.decisions = local.decisions || []).push(clone(d));
+      if (k != null) seenDec.add(String(k));
+    }
+    if (local.decisions.length > LIMITS.decisionsPerLife) local.decisions = local.decisions.slice(-LIMITS.decisionsPerLife);
+    const seenFocus = new Set((local.focusPicks || []).map((f) => [f.at, f.age, f.selectedK].join('|')));
+    for (const f of (incoming.focusPicks || [])) {
+      const k = [f.at, f.age, f.selectedK].join('|');
+      if (seenFocus.has(k)) continue;
+      (local.focusPicks = local.focusPicks || []).push(clone(f));
+      seenFocus.add(k);
+    }
+    if (local.focusPicks.length > LIMITS.focusPerLife) local.focusPicks = local.focusPicks.slice(-LIMITS.focusPerLife);
+    const seenNote = new Set((local.notes || []).map((n) => [n.at, n.q, n.t].join('|')));
+    for (const n of (incoming.notes || [])) {
+      const k = [n.at, n.q, n.t].join('|');
+      if (seenNote.has(k)) continue;
+      (local.notes = local.notes || []).push(clone(n));
+      seenNote.add(k);
+    }
+    if (!local.timeline || !local.timeline.length) local.timeline = clone(incoming.timeline || []);
+    local.timelineCount = Math.max(+local.timelineCount || 0, +incoming.timelineCount || 0);
+    local.warnings = Array.from(new Set([...(local.warnings || []), ...(incoming.warnings || [])]));
+  }
+
+  async function importRecorderData(raw) {
+    if (!state) throw new Error('记录器状态未加载');
+    const payload = raw && raw.data && raw.data.state ? raw.data : raw;
+    const mainRow = payload && Array.isArray(payload.state) ? (payload.state.find((r) => r && r.k === 'main') || payload.state[0]) : null;
+    const incomingMain = mainRow && mainRow.v;
+    if (!incomingMain || !incomingMain.lives || typeof incomingMain.lives !== 'object') {
+      throw new Error('文件格式不识别：请选择 raw-indexeddb.json 或包含 data.state 的导出文件');
+    }
+    const incoming = normalizeState(incomingMain);
+    const incomingIds = new Set(Object.keys(incoming.lives));
+    if (!incomingIds.size) throw new Error('导入文件里没有人生数据');
+    await flushSave();
+    const added = { lives: 0, states: 0, snapshots: 0, timelines: 0, countries: 0 };
+    for (const id of incomingIds) {
+      const src = incoming.lives[id];
+      if (!state.lives[id]) {
+        state.lives[id] = clone(src);
+        state.lives[id].stateCount = 0;
+        state.lives[id].stateBytes = 0;
+        state.lives[id].snapCount = 0;
+        state.lives[id].snapBytes = 0;
+        added.lives++;
+      } else {
+        mergeImportedLife(state.lives[id], src);
+      }
+    }
+    state.deletedLifeIds = Array.from(new Set([...(state.deletedLifeIds || []), ...(incoming.deletedLifeIds || [])]));
+    if (!state.settings && incoming.settings) state.settings = clone(incoming.settings);
+    if (!state.settingsCatalog && incoming.settingsCatalog) state.settingsCatalog = clone(incoming.settingsCatalog);
+    if (!state.introText && incoming.introText) state.introText = incoming.introText;
+    if (!state.hookCaptures || !state.hookCaptures.length) state.hookCaptures = clone(incoming.hookCaptures || []);
+    else {
+      const seenHook = new Set(state.hookCaptures.map((c) => c && c.id).filter(Boolean));
+      for (const c of (incoming.hookCaptures || [])) {
+        if (c && c.id && !seenHook.has(c.id)) state.hookCaptures.push(clone(c));
+      }
+    }
+    const importedLifeIds = new Set(incomingIds);
+    const existingStates = await idbAllStates();
+    const seenState = new Set(existingStates.map((s) => s && s.id).filter(Boolean));
+    for (const st of (payload.states || [])) {
+      if (!st || !st.id || !importedLifeIds.has(st.lifeId) || seenState.has(st.id)) continue;
+      await idbAddState(st);
+      seenState.add(st.id);
+      const life = state.lives[st.lifeId];
+      if (life) {
+        life.stateCount = (+life.stateCount || 0) + 1;
+        life.stateBytes = (+life.stateBytes || 0) + (+st.bytes || 0);
+        life.lastStateAt = st.at || life.lastStateAt;
+      }
+      state.statesTotal = (+state.statesTotal || 0) + 1;
+      state.stateBytesTotal = (+state.stateBytesTotal || 0) + (+st.bytes || 0);
+      state.lastStateAt = st.at && (!state.lastStateAt || String(st.at) > String(state.lastStateAt)) ? st.at : state.lastStateAt;
+      added.states++;
+    }
+    const existingSnaps = await idbAllSnapshots();
+    const seenSnap = new Set(existingSnaps.map((s) => [s.lifeId, s.type, s.ref, s.hash, s.at].join('|')));
+    for (const sn of (payload.snapshots || [])) {
+      if (!sn || !importedLifeIds.has(sn.lifeId)) continue;
+      const key = [sn.lifeId, sn.type, sn.ref, sn.hash, sn.at].join('|');
+      if (seenSnap.has(key)) continue;
+      const row = clone(sn);
+      delete row.id;
+      await idbAddSnapshot(row);
+      seenSnap.add(key);
+      const bytes = +row.bytes || byteLen(row.text || '');
+      const life = state.lives[sn.lifeId];
+      if (life) {
+        life.snapCount = (+life.snapCount || 0) + 1;
+        life.snapBytes = (+life.snapBytes || 0) + bytes;
+      }
+      state.snapBytesTotal = (+state.snapBytesTotal || 0) + bytes;
+      added.snapshots++;
+    }
+    const existingTimelines = await idbAllTimelines();
+    const timelineMap = new Map(existingTimelines.map((t) => [t.lifeId, t]));
+    for (const t of (payload.timelines || [])) {
+      if (!t || !importedLifeIds.has(t.lifeId) || timelineMap.has(t.lifeId)) continue;
+      await idbPutTimeline(t.lifeId, t.entries || []);
+      timelineMap.set(t.lifeId, t);
+      delete ui.timelineCache[t.lifeId];
+      added.timelines++;
+    }
+    const existingCountries = await idbAllCountries();
+    const countryMap = new Map(existingCountries.map((c) => [c.key, c]));
+    for (const c of (payload.countries || [])) {
+      if (!c || !c.key || countryMap.has(c.key)) continue;
+      await idbPutCountry(c);
+      countryMap.set(c.key, c);
+      live.countryCache[c.key] = c;
+      added.countries++;
+    }
+    state.countryCount = Object.keys(live.countryCache).length;
+    const firstImported = Array.from(incomingIds)[0];
+    if (!live.lifeId && firstImported && state.lives[firstImported]) {
+      ui.view = 'life';
+      ui.viewLifeId = firstImported;
+      ui.tab = 'decisions';
+      ui.filter = 'all';
+      ui.pendingScrollTop = 0;
+    }
+    saveState(true);
+    updateUI();
+    showToast('start', '导入完成', '新增 ' + added.states + ' 状态 · ' + added.snapshots + ' 快照 · ' + added.lives + ' 人生');
+    return added;
+  }
+
+  async function importRecorderFile(file) {
+    if (!confirm('导入会合并到现有记录，不会清空。建议先导出现有 JSON。继续吗？')) return;
+    let raw;
+    try {
+      raw = JSON.parse(await file.text());
+    } catch (e) {
+      throw new Error('JSON 解析失败：' + (e && e.message ? e.message : e));
+    }
+    return importRecorderData(raw);
   }
 
   async function deleteLife(lifeId) {

@@ -146,3 +146,11 @@
 - 记录器版本：1.5.0
 - IndexedDB 版本：2
 - 文本快照的 `truncated` 在 1.5.0 起为 false
+
+
+## 导入与查看
+
+- 记录器：`所有人生 → 导出 / 维护 → 导入 JSON`，选择 `raw-indexeddb.json`
+- 导入为合并模式，不覆盖本地数据
+- 静态查看：仓库根目录运行 `python3 -m http.server 8080`，打开 `/viewer/`
+- 导入和查看都不会恢复游戏自己的 localStorage 存档

@@ -38,6 +38,16 @@ https://1in8b.life/
 
 刷新页面，右下角会出现记录器。
 
+## 导入历史数据
+
+安装后打开记录器 → `所有人生` → `导出 / 维护` → `导入 JSON`，选择：
+
+```text
+data/belgium-daan-smit/raw-indexeddb.json
+```
+
+导入会合并，不会清空现有记录。
+
 ## 更新
 
 更新版本时：
